@@ -1,0 +1,428 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text" href="des.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    <body style="background-color: white;" >
+        <div style="background-color: forestgreen; text-align: center; margin-left: auto; height: 90px  ; font-size: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
+            -: C Snippets :-
+        </div>
+        <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 11.What is the output of the C snippet?
+
+void main()
+{
+int i=10;
+i=!i>14;
+printf("i=%d",i);
+}
+ 
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample11">
+                                         <div class="card card-body">
+                                                        <pre>
+Output : 0
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 11th snippet-->
+         <!--Start of 12th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 12.What is the output of the following C snippet?
+int main()
+{
+int i,j,count;
+count=0;
+for(i=0; i&lt5; i++);
+{ 
+	for(j=0;j&lt5;j++);
+	{
+	    count++;
+	}
+}
+printf("%d",count);
+return 0;
+}
+
+(A) 55
+(B) 54
+(C) 1
+(D) 0
+ 
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample12">
+                                         <div class="card card-body">
+                                                        <pre>
+Option C
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 12th snippet-->
+         <!--Start of 13th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+13.What is the output of following C snippet ?
+
+#include &ltstdio.h&gt
+int main()
+{
+int a,b,c;
+a=0x10; b=010;
+c=a+b;
+printf("\nAddition is= %d",c);
+return 0;
+}
+
+1) Addition is = 20
+2) Addition is = 24
+3) Addition is = Garbage
+4) ERROR
+ 
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample13">
+                                         <div class="card card-body">
+                                                        <pre>
+Option 2 : Addition is = 24
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 13th snippet-->
+         <!--Start of 14th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+14.What is the output of the following C snippet?
+void main()
+{
+int c[ ]={2.8,3.4,4,6.7,5};
+int j,*p=c,*q=c;
+for(j=0;j&lt5;j++)
+{
+    printf(" %d ",*c);
+    ++q;	
+}
+for(j=0;j&lt5;j++)
+{
+    printf(" %d ",*p);
+    ++p;
+}
+}
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample14" aria-expanded="false" aria-controls="collapseExample">
+                     Answer 
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample14">
+                                         <div class="card card-body">
+                                                        <pre>
+Output :2  2  2  2  2  2  3  4  6  5
+Reason : Initially pointer c is assigned to both p and q.
+In the first loop, since only q is incremented and not c ,
+the value 2 will be printed 5 times.
+In second loop p itself is incremented.
+So the values 2 3 4 6 5 will be printed.
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 14th snippet-->
+         <!--Start of 15th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 
+ 15.What is the output of the following C snippet?
+
+void main()
+{
+    int a=10;
+    switch(a)
+    {
+        
+    }
+    printf("Hello");
+}
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample15" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample15">
+                                         <div class="card card-body">
+                                                        <pre>
+Output : Hello
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 15th snippet-->
+         <!--Start of 16th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 
+16.What is the output of the following C snippet?
+
+int show(int v) 
+{ 
+if(v= =1||v= =0) 
+    return 1; 
+if(v % 2==0) 
+    return show(v/2) +2; 
+else 
+    return show(v-2) +3; 
+} 
+void main( ) 
+{ 
+int z; 
+z = show(7); 
+printf(“%d”,z); 
+} 
+
+
+A.  11 
+B.  5 
+C.  10 
+D.  infinite loop 
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample16" aria-expanded="false" aria-controls="collapseExample">
+                    Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample16">
+                                         <div class="card card-body">
+                                                        <pre>
+Output:10
+
+show(5)->show(3)->show(1)
+1 will be returned to show(1)
+4(1+3) will be returned to show(3)
+7(4+3) will be returned to show(5)
+10(7+3) will be returned to the main finally
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 16th snippet-->
+         <!--Start of 17th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+17.What is the output of the following C snippet?
+
+#include &ltstdio.h&gt
+int main()
+{
+    int i=1;
+    switch(i)
+    {
+        printf("Hello");
+        case 1: printf("\nHai1");
+            break;
+        case 2:printf("\nHai2");
+            break;
+    }
+}
+
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample17" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample17">
+                                         <div class="card card-body">
+                                                        <pre>
+Output : Hai1
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 17th snippet-->
+         <!--Start of 18th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 
+18.What is the Output of the following C snippet?
+
+#include &ltstdio.h&gt  
+    int main()  
+    {  
+        int *ptr, a = 10;  
+        ptr = &a;  
+        *ptr += 1;  
+        printf("%d,%d/n", *ptr, a);  
+    }  
+
+a)10, 10
+b)10, 11
+c)11, 10
+d)11, 11
+ 
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample18" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample18">
+                                         <div class="card card-body">
+                                                        <pre>
+Output : 11,11
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 18th snippet-->
+         <!--Start of 19th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 
+19.What is the output of the following C snippet?
+
+#include &ltstdio.h&gt
+int main()
+{
+for(5;2;2) 
+printf("Hello");
+return 0;
+}
+
+A. Compilation error
+B. Program never ends
+C. Hello
+D. None of the above
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample19" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample19">
+                                         <div class="card card-body">
+                                                        <pre>
+Program never ends
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 19th snippet-->
+         <!--Start of 20th snippet-->
+         <br>
+         <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;"  >
+                 <pre >
+ 
+20.What will be the output of the following C code? 
+
+int main()
+{   
+    int i=0;
+    while ( +(+i--) != 0)
+        i-=i++;
+    printf("%d",i);
+    return 0;  
+ }
+ 
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample20" aria-expanded="false" aria-controls="collapseExample">
+                     Answer
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample20">
+                                         <div class="card card-body">
+                                                        <pre>
+Output : -1 
+If we 1st consider the while condition unary + doesn't do anything so the simplified condition becomes (i–) != 0
+So i will be compared with 0 and then decremented no matter whether condition is true or false.
+Since i is initialized to 0, the condition of while will b false at the 1st iteration
+itself but i will be decremented to -1.
+The body of while loop will not be executed.
+And finally printf will print -1.
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 20th snippet-->
+         <br>
+
+    </body>
+</html>

@@ -1,0 +1,420 @@
+<html>
+    <head>
+<link rel="stylesheet" type="text" href="des.css"/>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    </head>
+    
+    <body style="background-color: white;" >
+        <div style="background-color: forestgreen; text-align: center; margin-left: auto; height: 90px  ; font-size: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
+            -: C Snippets :-
+        </div>
+        <div >
+           <div style="border:2px solid black ; width:700px " >
+                <div style="padding-left: 10px;"  >
+                <pre >
+
+
+1.What is output of the following c snippet?
+
+
+#include &ltstdio.h&gt
+int takefirst(int a,int b,int c) 
+    { 
+        return (++a,b+2,c); 
+    } 
+void main( ) 
+    { 
+        static int m,n; 
+        m = takefirst(n,m,n); 
+        printf(“%d”,m); 
+    }
+    
+    
+A.  2 
+B.  1 
+C.  0 
+D.  syntax error in the return statement 
+                </pre>
+                </div >
+                <p>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    Explaination
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample1">
+                                        <div class="card card-body">
+                                                       <pre>
+Output:0
+Default value for static variable is 0, 
+Comma behaves as operator in return,
+so it returns right most operand to main.
+                                                        </pre>
+                                        </div>
+                </div>
+           </div>            
+        </div>
+        <!--End of 1st snippet-->
+        <!--start of 2nd snippet-->
+        <br>
+        <div >
+            <div style="border:2px solid black ; width:700px " >
+                 <div style="padding-left: 10px;">
+                 <pre >
+
+
+2.What is the output of the following C snippets?
+
+1. int a =(3, 4, 8);
+    printf("%d", a);
+
+2. int a = 3, 4, 8;
+    printf("%d",a);
+
+3. int a;
+    a = 3, 4, 8;
+    printf("%d", a);
+                 </pre>
+                 </div >
+                 <p>
+                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                     Explaination
+                     </button>
+                 </p>
+                 <div class="collapse" id="collapseExample2">
+                                         <div class="card card-body">
+                                                        <pre>
+All these qustions are related to;
+Comma being Seperator
+Comma being Operator
+
+1.Output:8 
+Here, Comma is being used as operator as the operands are enclosed within parenthesis.
+For Comma being operator, it return rightmost operand to the variable, hence 8
+
+2.Output:Error
+Comma here is of Seperator, it is as similar as int a=3,int 4,int 8
+Since the variable should not start with digit, results in error
+
+3.output:3
+Comma is of operator!
+As comma operator has least precedence than assignment operator, it is evaluated first, assigning 3 to a.
+                                                         </pre>
+                                         </div>
+                 </div>
+            </div>            
+         </div>
+         <!--End of 2nd snippet-->
+         <!--start of 3rd snippet-->
+         <br>
+         <div>
+         <div style="border:2px solid black ; width:700px " >
+            <div style="padding-left: 10px;">
+            <pre >
+
+3. what is the output of the following snippet?
+
+#include &ltstdio.h&gt
+void main()
+{
+int n = 12;
+int num = 2 == 3 && n++;
+printf("%d %d", num, n);
+}
+
+a)12
+b)2
+c)3
+d)0 12
+e)12 0
+            </pre>
+            </div >
+            <p>
+                <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                Explaination
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample3">
+                                    <div class="card card-body">
+                                                   <pre>
+
+Option d
+Since the first operand of Logical and is zero it will not evaluate the second operand,
+hence the output is 0 12
+                                                    </pre>
+                                    </div>
+            </div>
+       </div>            
+    </div>
+    <!--End of 3rd snippet-->
+    <!--start of 4th snippet-->
+    <br>
+    <div>
+        <div style="border:2px solid black ; width:700px " >
+           <div style="padding-left: 10px;">
+           <pre >
+
+4. What is the output of the following C snippet?
+
+int main()
+{
+int i;
+for(i=0;i<20;i++)
+    {
+        switch(i)
+        {
+            case 0:i+=5;
+            case 1:i+=2;
+            case 5:i+=5;
+            default:i+=4;
+        }
+    printf("%d\n",i);
+    }
+}
+
+           </pre>
+           </div >
+           <p>
+               <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+               Explaination
+               </button>
+           </p>
+           <div class="collapse" id="collapseExample4">
+                                   <div class="card card-body">
+                                                  <pre>
+Output :
+16
+21
+
+                                                   </pre>
+                                   </div>
+           </div>
+      </div>            
+   </div>
+   <!--End of 4th snippet-->
+   <!--start of 5th snippet-->
+   <br>
+   <div>
+    <div style="border:2px solid black ; width:700px " >
+       <div style="padding-left: 10px;">
+       <pre >
+5. What is the output of the following C snippet?
+
+#include &ltstdio.h&gt
+int main()
+{
+    int i = 1, j = 1;
+    for(--i && j++ ; i<10; i+=2)
+    {
+        printf("loop ");
+    }
+    return 0;
+}
+
+A. Compilation error
+B. Program never ends
+C. loop loop loop loop loop
+D. None of the above
+
+       </pre>
+       </div >
+       <p>
+           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+           Explaination
+           </button>
+       </p>
+       <div class="collapse" id="collapseExample5">
+                               <div class="card card-body">
+                                              <pre>
+
+
+                                               </pre>
+                               </div>
+       </div>
+  </div>            
+</div>
+<!--End of 5th snippet-->
+<!--start of 6th snippet-->
+<br>
+<div>
+    <div style="border:2px solid black ; width:700px " >
+       <div style="padding-left: 10px;">
+       <pre >
+6.What is the output of the following C snippet?
+
+#include &ltstdio.h&gt
+int main()
+{
+if (sizeof(int) > -1)
+printf("Yes");
+else
+printf("No");
+return 0;
+}
+
+       </pre>
+       </div >
+       <p>
+           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+           Explaination
+           </button>
+       </p>
+       <div class="collapse" id="collapseExample6">
+                               <div class="card card-body">
+                                              <pre>
+Output: No 
+This is because the sizeof operator returns an unsigned type.
+When an unsigned type is compared with a signed type, both are converted to unsigned before comparison.
+In the case of if(sizeof(int)>-1), -1 is converted to some large unsigned value, which is greater than sizeof(int)
+and hence condition of if statement is false and it prints "No"
+
+                                               </pre>
+                               </div>
+       </div>
+  </div>            
+</div>
+<!--End of 6th snippet-->
+<!--start of 7th snippet-->
+<br>
+<div>
+    <div style="border:2px solid black ; width:700px " >
+       <div style="padding-left: 10px;">
+       <pre >
+7.What is the output of the following C snippet?
+#include &ltstdio.h&gt
+int main()
+{
+    char a = 30;
+    char b = 40;
+    char c = 10;
+    char d = (a * b) / c;
+    printf ("%d ", d);
+    return 0;
+}
+       </pre>
+       </div >
+       <p>
+           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+           Explaination
+           </button>
+       </p>
+       <div class="collapse" id="collapseExample7">
+                               <div class="card card-body">
+                                              <pre>
+Output : 120 
+(1200/10)
+
+                                               </pre>
+                               </div>
+       </div>
+  </div>            
+</div>
+<!--End of 7th snippet-->
+<!--start of 8th snippet-->
+<br>
+<div>
+    <div style="border:2px solid black ; width:700px " >
+       <div style="padding-left: 10px;">
+       <pre >
+8.What is output of the following C snippet?
+    
+#include &ltstudio.h&gt
+int main()
+{
+    int n; 
+    for(n = 7; n!=0; n--)
+        printf("n = %d", n--);
+    getch();
+    return 0;
+}
+
+       </pre>
+       </div >
+       <p>
+           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
+           Explaination
+           </button>
+       </p>
+       <div class="collapse" id="collapseExample8">
+                               <div class="card card-body">
+                                              <pre>
+
+Output : Infinite loop
+                                               </pre>
+                               </div>
+       </div>
+  </div>            
+</div>
+<!--End of 8th snippet-->
+<!--start of 9th snippet-->
+<br>
+<div>
+    <div style="border:2px solid black ; width:700px " >
+       <div style="padding-left: 10px;">
+       <pre >
+9.What is the output of the following C snippet?
+
+void main()
+{
+    int  const * p=5;
+    printf("%d",++(*p));
+}
+
+       </pre>
+       </div >
+       <p>
+           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample9" aria-expanded="false" aria-controls="collapseExample">
+           Explaination
+           </button>
+       </p>
+       <div class="collapse" id="collapseExample9">
+                               <div class="card card-body">
+                                              <pre>
+
+Output :Error 
+Constant value can't be modified.
+                                               </pre>
+                               </div>
+       </div>
+  </div>            
+</div>
+<!--End of 9th snippet-->
+<!--start of 10th snippet-->
+<br>
+<div>
+    <div style="border:2px solid black ; width:700px " >
+       <div style="padding-left: 10px;">
+       <pre >
+10.What is the output of the following C snippet?
+
+#include &ltstdio.h&gt 
+#define scanf  "%s Geeks For Geeks" 
+main() 
+{ 
+    printf(scanf, scanf); 
+    getchar(); 
+    return 0; 
+}
+       </pre>
+       </div >
+       <p>
+           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
+           Explaination
+           </button>
+       </p>
+       <div class="collapse" id="collapseExample10">
+                               <div class="card card-body">
+                                              <pre>
+After compiling printf becomes :
+printf("%s Geeks For Geeks ", "%s Geeks For Geeks ");
+
+So Output becomes : %s Greeks For Geeks Geeks For Geeks
+                                               </pre>
+                               </div>
+       </div>
+  </div>            
+</div>
+<!--End of 10th snippet-->
+    </body>
+</html>
