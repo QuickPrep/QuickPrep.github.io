@@ -105,7 +105,7 @@ ul{
     
 }
 header { 
-    background-color: #0a75ad;
+    background-color:linear-gradient(rgba(0,0,0,0.5),#009688);
     text-align: center;
     margin-top: 10px;
     height: 60px;
@@ -254,7 +254,7 @@ nav ul li a{
   }
   }
 
-/*index page css*/
+
 
 
 
