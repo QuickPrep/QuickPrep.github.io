@@ -87,7 +87,9 @@ ul{
     text-decoration: none;
     color: #bbbbbb;
 }
-
+.intend{
+    margin-left: 34px;
+}
 
 /*responsive*/
 @media(max-width: 767px){
