@@ -103,7 +103,7 @@ ul{
    
     
 }
-header h3{ 
+header { 
     background-color: #0a75ad;
     text-align: center;
     margin-top: 10px;
@@ -128,7 +128,7 @@ header h3{
       margin-left:30px;
       font-size: 20px;
   }
-  header h3{
+  header {
       width:100%;
   }
   }
