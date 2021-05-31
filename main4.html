@@ -1,16 +1,27 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text" href="des.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
     <body style="background-color: white;" >
-        <div style="background-color: forestgreen; text-align: center; margin-left: auto; height: 90px  ; font-size: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
-            -: C Snippets :-
-        </div>
+        <header> 
+            <div>            
+                <h3 style="color: white;padding: 10px;">Quick Prep</h3>
+            </div>
+        </header>
+        <br>
+        <h4>C Snippets | Set 4</h4>
+        <br>
         <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 31.What is the output of the following C snippet?
@@ -21,19 +32,20 @@ int main()
     int n=7;
     printf("%.*s",n,s);
     return 0;
-}
-                 </pre>
+}</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample31" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample31">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Output : Geeks Q</b>
+Explaination:
+It prints 'n' long characters
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -42,7 +54,7 @@ int main()
          <!--Start of 12th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 32.What is the output of the following C snippet?
@@ -52,9 +64,7 @@ int main()
     printf("%x",-1&lt&lt1);
     getchar();
     return 0;
-}
- 
-                 </pre>
+}</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample32" aria-expanded="false" aria-controls="collapseExample">
@@ -64,8 +74,16 @@ int main()
                  <div class="collapse" id="collapseExample32">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Output : ffffffe</b>
+Explaination:
+0000 0000 0000 0000 0000 0000 0000 0001 (1 in 32 bit compiler)
+1111 1111 1111 1111 1111 1111 1111 1110 (1's Compliment of 1)
+                                      1 
+-----------------------------------------
+1111 1111 1111 1111 1111 1111 1111 1111 (2's Compliment or -1)
+1111 1111 1111 1111 1111 1111 1111 1111 (&lt&lt1)
+  f    f    f   f    f     f    f    e  (in Hexadecimal
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -74,7 +92,7 @@ int main()
          <!--Start of 13th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 33.What is the output of the following C snippet?
@@ -88,9 +106,7 @@ int main()
     m=a[i++];
     printf("%d, %d, %d",i,j,m);
     return 0;
-}
- 
-                 </pre>
+}</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample33" aria-expanded="false" aria-controls="collapseExample">
@@ -100,8 +116,13 @@ int main()
                  <div class="collapse" id="collapseExample33">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Output: 3, 2, 15</b>
+Explaination:
+i = preincrement of a[1] => preincrement of 1 => 2 
+j = postincrement of a[1] => postincrement of 1 =>2
+m = a[i++] => a[2++] => 15,meanwhile i is incremented to 3
+Hence 3, 2, 15
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -110,7 +131,7 @@ int main()
          <!--Start of 14th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 34.What is the output of the following C snippet?
@@ -142,170 +163,59 @@ power(int **ptr)
                  <div class="collapse" id="collapseExample14">
                                          <div class="card card-body">
                                                         <pre>
-
+<b>Output: 25</b>
+Explaination:
+*aa is the pointer which stores the address of a
+We are passing address of aa to the function power
+Power function receiving actual value (**(&aa))which is nothing but 5
+So returning 5 * 5 ,prints 25
                                                          </pre>
                                          </div>
                  </div>
             </div>            
          </div>
          <!--End of 14th snippet-->
-         <!--Start of 15th snippet-->
+         
          <br>
-         <div >
-            <div style="border:2px solid black ; width:700px " >
-                 <div style="padding-left: 10px;"  >
-                 <pre >
- 
- 
- 
-                 </pre>
-                 </div >
-                 <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample15" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
-                     </button>
-                 </p>
-                 <div class="collapse" id="collapseExample15">
-                                         <div class="card card-body">
-                                                        <pre>
 
-                                                         </pre>
-                                         </div>
+         <a  id="resp1" href="main3.html"> < Previous</a> 
+        <!-- <a  id="resp1" href="main4.html">Next ></a>-->
+         
+         <br><br><br>
+         
+         
+         <footer class="footer">
+             <div class="container">
+                 <div class="row1">
+                     <div class="footer-col">
+                         <h4>About us</h4>
+                         <ul>
+                             <li><a href="#">This website is created in </a></li>
+                             <li><a href="#">mission to help students</a></li>
+                             <li><a href="#">regarding placements.</a></li>
+                            
+                         </ul>
+                     </div>
+                     
+                     <div class="footer-col">
+                         <h4>Contact us</h4>
+                         <div class="intend">                
+                         <a class="link" href="#">nithin.cse.rymec@gmail.com</a><br>
+                         <a class="link" href="#">rahul.cse.rymec@gmail.com</a>
+                         </div>
+                     </div>
+                         
+                     <div class="footer-col">
+                         <h4>Contributed by</h4>
+                         <ul>
+                             <li><a href="#">Nithin Kalmath</a></li>
+                             <li><a href="#">Rahul Shetty</a></li>
+                         </ul>
+                     </div>
+                     
                  </div>
-            </div>            
-         </div>
-         <!--End of 15th snippet-->
-         <!--Start of 16th snippet-->
-         <br>
-         <div >
-            <div style="border:2px solid black ; width:700px " >
-                 <div style="padding-left: 10px;"  >
-                 <pre >
- 
- 
- 
-                 </pre>
-                 </div >
-                 <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample16" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
-                     </button>
-                 </p>
-                 <div class="collapse" id="collapseExample16">
-                                         <div class="card card-body">
-                                                        <pre>
-
-                                                         </pre>
-                                         </div>
-                 </div>
-            </div>            
-         </div>
-         <!--End of 16th snippet-->
-         <!--Start of 17th snippet-->
-         <br>
-         <div >
-            <div style="border:2px solid black ; width:700px " >
-                 <div style="padding-left: 10px;"  >
-                 <pre >
- 
- 
- 
-                 </pre>
-                 </div >
-                 <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample17" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
-                     </button>
-                 </p>
-                 <div class="collapse" id="collapseExample17">
-                                         <div class="card card-body">
-                                                        <pre>
-
-                                                         </pre>
-                                         </div>
-                 </div>
-            </div>            
-         </div>
-         <!--End of 17th snippet-->
-         <!--Start of 18th snippet-->
-         <br>
-         <div >
-            <div style="border:2px solid black ; width:700px " >
-                 <div style="padding-left: 10px;"  >
-                 <pre >
- 
- 
- 
-                 </pre>
-                 </div >
-                 <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample18" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
-                     </button>
-                 </p>
-                 <div class="collapse" id="collapseExample18">
-                                         <div class="card card-body">
-                                                        <pre>
-
-                                                         </pre>
-                                         </div>
-                 </div>
-            </div>            
-         </div>
-         <!--End of 18th snippet-->
-         <!--Start of 19th snippet-->
-         <br>
-         <div >
-            <div style="border:2px solid black ; width:700px " >
-                 <div style="padding-left: 10px;"  >
-                 <pre >
- 
- 
- 
-                 </pre>
-                 </div >
-                 <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample19" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
-                     </button>
-                 </p>
-                 <div class="collapse" id="collapseExample19">
-                                         <div class="card card-body">
-                                                        <pre>
-
-                                                         </pre>
-                                         </div>
-                 </div>
-            </div>            
-         </div>
-         <!--End of 19th snippet-->
-         <!--Start of 20th snippet-->
-         <br>
-         <div >
-            <div style="border:2px solid black ; width:700px " >
-                 <div style="padding-left: 10px;"  >
-                 <pre >
- 
- 
- 
-                 </pre>
-                 </div >
-                 <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample20" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
-                     </button>
-                 </p>
-                 <div class="collapse" id="collapseExample20">
-                                         <div class="card card-body">
-                                                        <pre>
-
-                                                         </pre>
-                                         </div>
-                 </div>
-            </div>            
-         </div>
-         <!--End of 20th snippet-->
-         <br>
+             </div>
+         </footer>
 
     </body>
 </html>
