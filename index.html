@@ -5,7 +5,9 @@
         <meta name="viewport" content="width= device-width, initial-scale=1">
     </head>
     <body>
+        
         <section id="banner">
+            <img src="logo2.png" class="logo">
             <div class="banner-text">
                 <h1>Quick Prep</h1>
                 <p>Pre Placement Kit</p>
@@ -14,5 +16,36 @@
                 </div>
             </div>
         </section>
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li> <a href="#">HOME</a></li>
+                    <li> <a href="#">FEEDBACK</a></li>
+                    <li> <a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu.png" id="menu">
+        </div>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            sidenav.style.right = "-250px";
+
+            menuBtn.onclick =function(){
+                if(sidenav.style.right == "-250px"){
+                    sidenav.style.right ="0";
+                    menu.src ="close.png";
+                }
+                else{
+                    sidenav.style.right="-250px";
+                    menu.src ="menu.png";
+
+                }
+            }
+        </script>
     </body>
 </html>     

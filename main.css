@@ -150,10 +150,57 @@ header {
     background-position:center;
     height: 100vh;
 }
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    border-radius: 50%;
+}
+
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #31cbbb;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+
+}
+
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #31cbbb;
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    top:5px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+
+}
+
 .banner-text{
     text-align: center;
     color: white;
-    padding-top: 300px;
+    padding-top: 100px;
     font-style:initial;
    
     
@@ -167,10 +214,10 @@ header {
     
 }
 .banner-btn{
-    margin: 70px auto 0;
+    margin: 220px auto 0;
 }
 .banner-btn a{
-    width: 150px;
+    width: 550px;
     text-decoration: none;
     display: inline-block;
     margin: 0 10px;
@@ -179,7 +226,9 @@ header {
     border: .5px solid white;
     position: relative;
     z-index: 1;
-    transition: color 0.5s;
+    transition: color 0.1s;
+    text-align: center;
+
 }
 .banner-btn a span{
     width: 0;
