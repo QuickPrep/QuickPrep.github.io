@@ -128,9 +128,7 @@ header {
       margin-left:30px;
       font-size: 20px;
   }
-  header {
-      width:100%;
-  }
+
   }
 @media(max-width: 574px){
     .footer-col{
