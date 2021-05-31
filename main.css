@@ -102,6 +102,16 @@ ul{
    
     
 }
+header{
+    background-color: #0a75ad;
+    text-align: center;
+    margin-top: 10px;
+    height: 60px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+
+}
 
 
 /*responsive*/
@@ -111,12 +121,14 @@ ul{
       margin-bottom: 30px;
   }
   #resp{
-      width:450;
+      width:400;
   }
   #resp1{
       margin-left:360px;
       font-size: 20px;
-      ;
+  }
+  header{
+      width:100%;
   }
   }
 @media(max-width: 574px){
