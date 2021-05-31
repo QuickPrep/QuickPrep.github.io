@@ -102,7 +102,7 @@ ul{
    
     
 }
-header{ 
+header h3{ 
     background-color: #0a75ad;
     text-align: center;
     margin-top: 10px;
@@ -117,7 +117,7 @@ header{
 /*responsive*/
 @media(max-width: 767px){
     .footer-col {
-      width: 50%;
+      width: 60%;
       margin-bottom: 30px;
   }
   #resp{
