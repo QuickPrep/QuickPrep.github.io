@@ -1,19 +1,29 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text" href="des.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     </head>
-    <body style="background-color: white;" >
-        <div style="background-color: forestgreen; text-align: center; margin-left: auto; height: 90px  ; font-size: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
-            -: C Snippets :-
-        </div>
+    <body  >
+        <header> 
+            <div>            
+                <h3 style="color: white;padding: 10px;">Quick Prep</h3>
+            </div>
+        </header>
+        <br>
+        <h4>C Snippets | Set 3</h4>
+        <br>
         <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
 21.What is the output of the following C snippet?
 
 #include&ltstdio.h&gt
@@ -32,8 +42,7 @@ A - Compile error
 B - Hi
 C - HelloHi
 D - Hello
-
-                 </pre>
+</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample21" aria-expanded="false" aria-controls="collapseExample">
@@ -43,9 +52,9 @@ D - Hello
                  <div class="collapse" id="collapseExample21">
                                          <div class="card card-body">
                                                         <pre>
-Option  A.
-break is only used within loops or switch ma'am!
-                                                         </pre>
+<b>output : Compile error </b>
+break is only used within loops or switch 
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -54,10 +63,10 @@ break is only used within loops or switch ma'am!
          <!--Start of 22nd snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 22.What is the output of the following C snippet?
+22.What is the output of the following C snippet?
 
 #include&ltstdio.h&gt
 int main()
@@ -78,9 +87,7 @@ int main()
 }
 What is The Output?
 What is the Difference Between Two codes?
- 
- 
-                 </pre>
+</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample22" aria-expanded="false" aria-controls="collapseExample">
@@ -104,7 +111,7 @@ incrementing which is not possible
          <!--Start of 23rd snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp">
                  <div style="padding-left: 10px;"  >
                  <pre >
 23.What is the output of the following C snippet?
@@ -121,9 +128,7 @@ int main()
 A. Compilation error
 B. 0
 C. 1
-D. Program never ends
- 
-                 </pre>
+D. Program never ends</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample23" aria-expanded="false" aria-controls="collapseExample">
@@ -133,7 +138,12 @@ D. Program never ends
                  <div class="collapse" id="collapseExample23">
                                          <div class="card card-body">
                                                         <pre>
-Output : Option C = 1
+<b>Output : 1</b>
+Explaination:
+Condition within for loop evaluates to false 
+So it doesn't executes its block i.e is semicolon 
+exits from the loop and executes the printf function 
+and prints 1.
                                                          </pre>
                                          </div>
                  </div>
@@ -143,7 +153,7 @@ Output : Option C = 1
          <!--Start of 24th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp">
                  <div style="padding-left: 10px;"  >
                  <pre >
 
@@ -164,8 +174,7 @@ int main()
     }
     getchar();
     return 0;
-}
-                 </pre>
+}</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample24" aria-expanded="false" aria-controls="collapseExample">
@@ -177,9 +186,7 @@ int main()
                                                         <pre>
 Output : 38,35,32,29,26,23,20,17,14,11,8,5,2
 Since num is static in fun(), the old value of num is preserved for subsequent functions calls.
-Also, since the statement return num-- is postfix, it returns the old value of num, and updates the value for next function call.
-
-                                                         </pre>
+Also, since the statement return num-- is postfix, it returns the old value of num, and updates the value for next function call.</pre>
                                          </div>
                  </div>
             </div>            
@@ -188,7 +195,7 @@ Also, since the statement return num-- is postfix, it returns the old value of n
          <!--Start of 25th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp">
                  <div style="padding-left: 10px;"  >
                  <pre >
 25.What do the following statement defines?
@@ -198,10 +205,7 @@ int *ptr[10];
 A - ptr is a pointer to an array of 10 integer pointers.
 B - ptr is a array of 10 pointers to integers
 C - ptr is a array of 10 integer pointers
-D - None of the above
-
- 
-                 </pre>
+D - None of the above </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample25" aria-expanded="false" aria-controls="collapseExample">
@@ -211,8 +215,7 @@ D - None of the above
                  <div class="collapse" id="collapseExample25">
                                          <div class="card card-body">
                                                         <pre>
-Output : Option A
-                                                         </pre>
+<b>Output : Option A</b></pre>
                                          </div>
                  </div>
             </div>            
@@ -221,7 +224,7 @@ Output : Option A
          <!--Start of 26th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp">
                  <div style="padding-left: 10px;"  >
                  <pre >
 26.What is the Output of the following C snippet?
@@ -250,7 +253,12 @@ return a;
                  <div class="collapse" id="collapseExample26">
                                          <div class="card card-body">
                                                         <pre>
-
+<b>Output : Compile time error </b>
+Explaination:
+passing the address of the local variable is not allowed in the function m().
+Although in turbo c compiler the output is going to be <b>Hello garbage value</b>
+This is why because since passing of local variables address is not possible,
+the compiler instead of showing error, it prints k[0]'s value which is some garbage value
                                                          </pre>
                                          </div>
                  </div>
@@ -260,7 +268,7 @@ return a;
          <!--Start of 27th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 27.What is the output of the following C snippet?
@@ -269,8 +277,7 @@ int main()
 {
     int res=printf("%10s","HELLO");
     printf("%d",res);
-}
-                 </pre>
+}</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample27" aria-expanded="false" aria-controls="collapseExample">
@@ -280,8 +287,10 @@ int main()
                  <div class="collapse" id="collapseExample27">
                                          <div class="card card-body">
                                                         <pre>
-Output : 
-                                                         </pre>
+<b>Output :     HELLO</b>
+Explaination:
+%10s indicates printing the output 10 characters wide.
+So first 5 characters are blank spaces and next 5 are 'HELLO'.</pre>
                                          </div>
                  </div>
             </div>            
@@ -290,7 +299,7 @@ Output :
          <!--Start of 28th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 28.What is the output of the following C snippet?
@@ -308,13 +317,13 @@ int f1(int a, int b)
 }
 main()
 {
-    if( f1(20.30) || f1(10,20) )
+    if( f1(20,30) || f1(10,20) )
     {
         printf("C is fun\n");
     }
 }
 
-a) A is greater than B
+a) B is greater than A
    C is fun 
 
 b) A is greater than B
@@ -335,8 +344,12 @@ d) None of the above
                  <div class="collapse" id="collapseExample28">
                                          <div class="card card-body">
                                                         <pre>
-Output : A is greater than B
+Output : B is greater than A
          C is fun
+Explaination:
+Since the first operand of 'logical OR' is true,the second operand 
+is not going to execute,because of short circuit property.
+
 </pre>
                                          </div>
                  </div>
@@ -346,18 +359,17 @@ Output : A is greater than B
          <!--Start of 29th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
 
- 29.Which is the smallest program to complie and run without errors?
+ 29.Which is the smallest program to complie 
+ and run without errors?
 
- a) main()
+ a)main()
  b)int main(){return 0;}
  c)main(){}
- d)main(){;}
- 
-                 </pre>
+ d)main(){;}</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample29" aria-expanded="false" aria-controls="collapseExample">
@@ -367,7 +379,7 @@ Output : A is greater than B
                  <div class="collapse" id="collapseExample29">
                                          <div class="card card-body">
                                                         <pre>
-
+<b>solution : main(){}</b>
                                                          </pre>
                                          </div>
                  </div>
@@ -377,17 +389,16 @@ Output : A is greater than B
          <!--Start of 30th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp">
                  <div style="padding-left: 10px;"  >
                  <pre >
-30.What is NOT one of the reserved words in standard C?
+30.What is NOT one of the reserved words
+in standard C?
 
 a)volatile
 b)typeof
 c)register
-d)typedef
- 
-                 </pre>
+d)typedef</pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample30" aria-expanded="false" aria-controls="collapseExample">
@@ -397,8 +408,8 @@ d)typedef
                  <div class="collapse" id="collapseExample30">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Solution: typeof</b>
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -406,5 +417,43 @@ d)typedef
          <!--End of 30th snippet-->
          <br>
 
+<a  id="resp1" href="main2.html"> < Previous</a> 
+<a  id="resp1" href="main4.html">Next ></a>
+
+<br><br><br>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row1">
+            <div class="footer-col">
+                <h4>About us</h4>
+                <ul>
+                    <li><a href="#">This website is created in </a></li>
+                    <li><a href="#">mission to help students</a></li>
+                    <li><a href="#">regarding placements.</a></li>
+                   
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact us</h4>
+                <div class="intend">                
+                <a class="link" href="#">nithin.cse.rymec@gmail.com</a><br>
+                <a class="link" href="#">rahul.cse.rymec@gmail.com</a>
+                </div>
+            </div>
+                
+            <div class="footer-col">
+                <h4>Contributed by</h4>
+                <ul>
+                    <li><a href="#">Nithin Kalmath</a></li>
+                    <li><a href="#">Rahul Shetty</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</footer>
     </body>
 </html>
