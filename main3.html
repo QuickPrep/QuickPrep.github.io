@@ -165,8 +165,6 @@ int main()
     getchar();
     return 0;
 }
- 
- 
                  </pre>
                  </div >
                  <p>
@@ -193,20 +191,27 @@ Also, since the statement return num-- is postfix, it returns the old value of n
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
+25.What do the following statement defines?
+
+int *ptr[10];
+
+A - ptr is a pointer to an array of 10 integer pointers.
+B - ptr is a array of 10 pointers to integers
+C - ptr is a array of 10 integer pointers
+D - None of the above
+
  
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample25" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample25">
                                          <div class="card card-body">
                                                         <pre>
-
+Output : Option A
                                                          </pre>
                                          </div>
                  </div>
@@ -219,14 +224,27 @@ Also, since the statement return num-- is postfix, it returns the old value of n
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
+26.What is the Output of the following C snippet?
+
+#include &ltstdio.h&gt
+int *m();
+void main()
+{ 
+int *k = m();
+printf("hello ");
+printf("%d", k[0]);
+}
+
+int *m()
+{
+int a[2] = {5, 8};
+return a;
+}
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample26" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample26">
@@ -245,20 +263,24 @@ Also, since the statement return num-- is postfix, it returns the old value of n
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
+27.What is the output of the following C snippet?
+
+int main()
+{
+    int res=printf("%10s","HELLO");
+    printf("%d",res);
+}
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample27" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample27">
                                          <div class="card card-body">
                                                         <pre>
-
+Output : 
                                                          </pre>
                                          </div>
                  </div>
@@ -271,21 +293,51 @@ Also, since the statement return num-- is postfix, it returns the old value of n
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
+28.What is the output of the following C snippet?
+
+int f1(int a, int b)
+{
+    if(a>b)
+    {
+        printf("A is greater than B\n");
+    }
+    else
+    {
+        printf("B is greater than A\n");
+    }
+}
+main()
+{
+    if( f1(20.30) || f1(10,20) )
+    {
+        printf("C is fun\n");
+    }
+}
+
+a) A is greater than B
+   C is fun 
+
+b) A is greater than B
+   B is greater than A
+   C is fun
+
+c) A is greater than B
+   B is greater than A
+
+d) None of the above
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample28" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample28">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+Output : A is greater than B
+         C is fun
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -297,14 +349,19 @@ Also, since the statement return num-- is postfix, it returns the old value of n
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
+
+ 29.Which is the smallest program to complie and run without errors?
+
+ a) main()
+ b)int main(){return 0;}
+ c)main(){}
+ d)main(){;}
  
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample29" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample29">
@@ -323,14 +380,18 @@ Also, since the statement return num-- is postfix, it returns the old value of n
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
+30.What is NOT one of the reserved words in standard C?
+
+a)volatile
+b)typeof
+c)register
+d)typedef
  
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample30" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample30">
