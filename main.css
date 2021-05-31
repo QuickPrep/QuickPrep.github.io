@@ -32,17 +32,9 @@ footer{
     margin-left:550px;
     
 }
-@media screen and(max-width:992px){
-    .footer_width_about .footer_contact{
-        width:25%;
-    }
-}
-@media screen and(max-width:767px){
-    .footer_width_about .footer_contact{
-        width:100%;
-        margin-bottom:30px;
-    }
-    .footer_info{
-        flex-direction: column;
+@media only screen and (max-device-width: 480px) {
+    footer{
+        background-color: green;
+        width:35%;
     }
 }
