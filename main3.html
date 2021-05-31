@@ -14,19 +14,37 @@
                  <div style="padding-left: 10px;"  >
                  <pre >
  
- 
- 
+21.What is the output of the following C snippet?
+
+#include&ltstdio.h&gt
+main() 
+{
+    int x = 5;
+    if(x==5)
+    {	
+        if(x==5) break;
+        printf("Hello");
+    } 
+    printf("Hi");
+}
+
+A - Compile error
+B - Hi
+C - HelloHi
+D - Hello
+
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample21" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample21">
                                          <div class="card card-body">
                                                         <pre>
-
+Option  A.
+break is only used within loops or switch ma'am!
                                                          </pre>
                                          </div>
                  </div>
@@ -39,20 +57,44 @@
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
+ 22.What is the output of the following C snippet?
+
+#include&ltstdio.h&gt
+int main()
+{
+    int arr[]={12,13,14,15,16};
+    printf("%d",(arr+1));
+    return 0;
+}
+What is The Output?
+
+
+#include&ltstdio.h&gt
+int main()
+{
+    int arr[]={12,13,14,15,16};
+    printf("%d",(arr++));
+    return 0;
+}
+What is The Output?
+What is the Difference Between Two codes?
  
  
                  </pre>
                  </div >
                  <p>
                      <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample22" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     Solution
                      </button>
                  </p>
                  <div class="collapse" id="collapseExample22">
                                          <div class="card card-body">
                                                         <pre>
-
+Output 1: First program prints address of second element of array i.e. 13
+Output 2: Second program gives an error
+Because (arr+1)=base address of arr+1*sizeof(int)
+But in second program you are trying to change the address by
+incrementing which is not possible
                                                          </pre>
                                          </div>
                  </div>
@@ -65,8 +107,21 @@
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
+23.What is the output of the following C snippet?
+
+ #include&ltstdio.h&gt
+int main()
+{
+    char i = 0;
+    for(;i++;printf("%d", i)) ;
+    printf("%d",i);
+    return 0;
+}
+
+A. Compilation error
+B. 0
+C. 1
+D. Program never ends
  
                  </pre>
                  </div >
@@ -78,7 +133,7 @@
                  <div class="collapse" id="collapseExample23">
                                          <div class="card card-body">
                                                         <pre>
-
+Output : Option C = 1
                                                          </pre>
                                          </div>
                  </div>
@@ -91,7 +146,25 @@
             <div style="border:2px solid black ; width:700px " >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
+
+24.What is the output of the following C snippet?
+
+include&ltstdio.h&gt
+int fun()
+{
+    static int num = 40;
+    return num--;
+}
+    
+int main()
+{
+    for(fun(); fun(); fun())
+    {
+    printf("%d ", fun());
+    }
+    getchar();
+    return 0;
+}
  
  
                  </pre>
@@ -104,6 +177,9 @@
                  <div class="collapse" id="collapseExample24">
                                          <div class="card card-body">
                                                         <pre>
+Output : 38,35,32,29,26,23,20,17,14,11,8,5,2
+Since num is static in fun(), the old value of num is preserved for subsequent functions calls.
+Also, since the statement return num-- is postfix, it returns the old value of num, and updates the value for next function call.
 
                                                          </pre>
                                          </div>
