@@ -91,14 +91,35 @@ ul{
     margin-left: 34px;
 }
 
+#resp{
+    border:1.5px solid black;
+    width:100%;
+}
+#resp1{
+    margin-left: 700px;
+    font-size: 20px;
+    text-decoration: none;
+   
+    
+}
+
+
 /*responsive*/
 @media(max-width: 767px){
-    .footer-col{
+    .footer-col header {
       width: 50%;
       margin-bottom: 30px;
   }
+  #resp{
+      width:450;
   }
-  @media(max-width: 574px){
+  #resp1{
+      margin-left:360px;
+      font-size: 20px;
+      ;
+  }
+  }
+@media(max-width: 574px){
     .footer-col{
       width: 100%;
   }
