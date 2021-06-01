@@ -249,10 +249,9 @@ nav ul li a{
   }
   #ind{
       margin-top: 80px;
-      font-size: 70px;
+      font-size: 55px;
   }
   #ind1{
-      margin-top: 5px;
       width: 200px;
   }
   #banner{
@@ -264,10 +263,11 @@ nav ul li a{
   }
   #log{
       margin-left:1px;
-      width:13%; 
+      width:15%; 
   }
   #menuBtn{
       margin-top: 25px;
+      height:45px;
   }
 
   }
