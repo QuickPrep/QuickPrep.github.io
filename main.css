@@ -99,21 +99,23 @@ ul{
 #resp1{
     margin-left: 20px;
     font-size: 20px;
-    text-decoration: none;
-	
-   
-    
+    text-decoration: none;  
 }
 header { 
     background-color: #0a75ad;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
     height: 60px;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     width: 100%;
+    color:#ffffff;
 
 }
+#nav{
+    margin-left: 10px;
+}
+
 /*index page*/
 *{
     margin: 0;
