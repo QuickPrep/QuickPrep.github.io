@@ -286,7 +286,8 @@ nav ul li a{
    }
 }
 
-/*responsive*/
+/*-------------------------------------------------------------responsive-------------------------------------------------------------------------*/
+
 @media(max-width: 767px){
     .footer-col {
       width: 60%;
@@ -325,7 +326,9 @@ nav ul li a{
       margin-top: 25px;
       height:45px;
   }
-
+  header{
+      width:100%;
+  }
   }
 @media(max-width: 574px){
     .footer-col{
