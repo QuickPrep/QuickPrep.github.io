@@ -264,6 +264,8 @@ header {
     color: black;
 }
 
+
+
 @media screen (max-width:770px){
     .banner-text h1{
         font-size: 44px;
@@ -273,6 +275,7 @@ header {
        margin: 20px auto;
    }
 }
+
 
 /*-------------------------------------------------------------responsive-------------------------------------------------------------------------*/
 
@@ -293,8 +296,9 @@ header {
       font-size: 20px;
   }
   #ind{
-      margin-top: 80px;
+      margin-top: 60px;
       font-size: 55px;
+      
   }
   #ind1{
       width: 200px;
@@ -306,18 +310,24 @@ header {
       height: 100vh;
       background-size: 100vh;
   }
-  #log{
-      margin-left:1px;
-      width:15%; 
-  }
- /* #menuBtn{
+  
+  #menuBtn{
       margin-top: 25px;
       height:45px;
   }
   header{
       width:470px;
   }
+  .logo{
+      display: none;
+    
+  }
   
+  .topnav a{
+      padding: 9px;
+      font-size: 15px;
+  }
+
   }
 @media(max-width: 574px){
     .footer-col{
