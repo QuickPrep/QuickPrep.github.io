@@ -322,10 +322,6 @@ header {
       display: none;
     
   }
-  .topnav{
-      
-      width:450px;
-  }
   .topnav a{
       overflow:auto;
       padding: 7px;
@@ -392,9 +388,6 @@ nav ul li a{
   #resp{
       width:400px;
   }
-  .topnav{
-    width:400px;
-}
   }
 
 
