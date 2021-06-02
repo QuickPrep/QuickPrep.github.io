@@ -292,7 +292,7 @@ nav ul li a{
       margin-bottom: 30px;
   }
   #resp{
-      width:380px;
+      width:390px;
   }
   #back{
       width:450px;
@@ -339,6 +339,12 @@ nav ul li a{
   }
   footer{
       width:500px;
+  }
+  #back{
+      width:450px;
+  }
+  #resp{
+      width:390px;
   }
   }
 
