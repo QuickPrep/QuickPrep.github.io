@@ -290,14 +290,14 @@ nav ul li a{
 
 @media(max-width: 767px){
     .footer-col {
-      width: 60%;
+      width: 470px;
       margin-bottom: 30px;
   }
   #resp{
       width:400px;
   }
   #back{
-      width:460px;
+      width:470px;
       margin-left: 0px;
   }
   #resp1{
@@ -333,6 +333,9 @@ nav ul li a{
 @media(max-width: 574px){
     .footer-col{
       width: 100%;
+  }
+  header{
+      width:470px;
   }
   }
 
