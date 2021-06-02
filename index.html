@@ -10,6 +10,15 @@
     <body>
         
         <section id="banner">
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="main1.html">C</a>
+                <a href="#">Java</a>
+                <a href="#">Python</a>
+                <a href="#">Interview kit</a>
+                <a href="#">Blogs</a>
+                <a href="contact.html">Contact us</a>
+              </div>
             <img id="log" src="logo2.png" class="logo">
             <div class="banner-text">
                 <h1 style="font-family: 'Cormorant Garamond', serif;" id="ind">Quick Prep</h1>
@@ -19,37 +28,6 @@
                 </div>
             </div>
         </section>
-        <div id="sidenav">
-            <nav>
-                <ul>
-                    <li> <a href="#">HOME</a></li>
-                    <li> <a href="#">FEEDBACK</a></li>
-                    <li> <a href="https://wa.me/918861144715" target="_blank">Contact Us</a></li>
-                    
-                </ul>
-            </nav>
-        </div>
-        <div id="menuBtn">
-            <img src="menu.png" id="menu">
-        </div>
-        <script>
-            var menuBtn = document.getElementById("menuBtn")
-            var sidenav = document.getElementById("sidenav")
-            var menu = document.getElementById("menu")
-
-            sidenav.style.right = "-250px";
-
-            menuBtn.onclick =function(){
-                if(sidenav.style.right == "-250px"){
-                    sidenav.style.right ="0";
-                    menu.src ="close.png";
-                }
-                else{
-                    sidenav.style.right="-250px";
-                    menu.src ="menu.png";
-
-                }
-            }
-        </script>
+       
     </body>
 </html>     

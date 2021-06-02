@@ -160,52 +160,43 @@ header {
     height: 100vh;
 }
 .logo{
-    width: 100px;
+    width:40px;
     position: absolute;
-    top: 4%;
-    left: 5%;
+    top: 1%;
+    left: 95%;
     border-radius: 50%;
 }
-
-#sidenav{
-    width: 250px;
-    height: 100vh;
-    position: fixed;
-    right: -250px;
-    top: 0;
-    background: #31cbbb;
-    z-index: 2;
-    transition: 0.5s;
-}
-nav ul li{
-    list-style: none;
-    margin: 50px 20px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color:white;
-
-}
-
-#menuBtn{
-    width: 50px;
-    height: 50px;
-    background: none;
+.contact{
     text-align: center;
-    position: fixed;
-    right: 20px;
-    top:5px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
+    padding-top: 200px;
 }
-#menuBtn img{
-    width: 20px;
-    margin-top: 15px;
-
-}
-
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color:black;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:lightgreen;
+    color: white ;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:lightgreen;
+    color: white;
+  }
 .banner-text{
     text-align: center;
     color: white;
@@ -299,11 +290,11 @@ nav ul li a{
       margin-left:1px;
       width:15%; 
   }
-  #menuBtn{
+ /* #menuBtn{
       margin-top: 25px;
       height:45px;
   }
-
+*/
   }
 @media(max-width: 574px){
     .footer-col{
