@@ -21,31 +21,32 @@
             </div>
         </header>
         <br>
-        
+        <div id="back">
         <h5 id="nav"><a href="main1.html">Set 1     |</a><a href="main2.html"> Set 2    |</a><a href="main3.html"> Set 3   |</a><a href="main4.html"> Set 4</a></h5>
            <h4 id="nav">C Snippets | Guess the output! | Set 1 </h4>
                     
 
-        
-        <div>
+       
+        <div >
+            
            <div id="resp">
                 <div style="padding-left: 10px;"  >
                 <pre>
 
 
-1.What is output of the following c snippet?
+1.
 
 #include &ltstdio.h&gt
 int takefirst(int a,int b,int c) 
-    { 
+{ 
         return (++a,b+2,c); 
-    } 
+} 
 void main( ) 
-    { 
+{ 
         static int m,n; 
         m = takefirst(n,m,n); 
         printf(“%d”,m); 
-    }
+}
     
     
 A.  2 
@@ -55,7 +56,7 @@ D.  syntax error in the return statement 
                 </pre>
                 </div >
                 <p>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                    <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                     Solution
                     </button>
                 </p>
@@ -82,7 +83,7 @@ so it returns right most operand to main i.e 'c'.
                  <pre >
 
 
-2.What is the output of the following C snippets?
+2.
 
 1. int a =(3, 4, 8);
     printf("%d", a);
@@ -96,7 +97,7 @@ so it returns right most operand to main i.e 'c'.
                  </pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
                      Solution
                      </button>
                  </p>
@@ -134,7 +135,7 @@ it is evaluated first, assigning 3 to a.
             <div style="padding-left: 10px;">
             <pre >
 
-3. what is the output of the following snippet?
+3.
 
 #include &ltstdio.h&gt
 void main()
@@ -152,7 +153,7 @@ e)12 0
             </pre>
             </div >
             <p>
-                <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
                 Solution
                 </button>
             </p>
@@ -178,7 +179,7 @@ n remains to be 12.Hence the output is 0 12
            <div style="padding-left: 10px;">
            <pre >
 
-4. What is the output of the following C snippet?
+4.
 
 int main()
 {
@@ -199,7 +200,7 @@ for(i=0;i<20;i++)
            </pre>
            </div >
            <p>
-               <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+               <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
                Solution
                </button>
            </p>
@@ -233,7 +234,8 @@ Since 21>20 the execution stops!❌
     <div id="resp" >
        <div style="padding-left: 10px;">
        <pre >
-5. What is the output of the following C snippet?
+
+5.
 
 #include &ltstdio.h&gt
 int main()
@@ -254,7 +256,7 @@ D. None of the above
        </pre>
        </div >
        <p>
-           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+           <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
            Solution
            </button>
        </p>
@@ -283,7 +285,8 @@ Explaination:
     <div id="resp" >
        <div style="padding-left: 10px;">
        <pre >
-6.What is the output of the following C snippet?
+
+6.
 
 #include &ltstdio.h&gt
 int main()
@@ -298,7 +301,7 @@ return 0;
        </pre>
        </div >
        <p>
-           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
+           <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
            Solution
            </button>
        </p>
@@ -326,7 +329,9 @@ and hence condition of if statement is false and it prints "No"
     <div id="resp"  >
        <div style="padding-left: 10px;">
        <pre >
-7.What is the output of the following C snippet?
+
+7.
+
 #include &ltstdio.h&gt
 int main()
 {
@@ -340,7 +345,7 @@ int main()
        </pre>
        </div >
        <p>
-           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
+           <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample">
            Solution
            </button>
        </p>
@@ -363,7 +368,8 @@ Explaination:
     <div id="resp">
        <div style="padding-left: 10px;">
        <pre >
-8.What is output of the following C snippet?
+
+8.
     
 #include &ltstudio.h&gt
 int main()
@@ -378,7 +384,7 @@ int main()
        </pre>
        </div >
        <p>
-           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
+           <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample8" aria-expanded="false" aria-controls="collapseExample">
            Solution
            </button>
        </p>
@@ -415,7 +421,8 @@ Since it is '!=' so the output is infinite.
     <div id="resp" >
        <div style="padding-left: 10px;">
        <pre >
-9.What is the output of the following C snippet?
+
+9.
 
 void main()
 {
@@ -447,7 +454,8 @@ Constant value can't be modified.
     <div id="resp">
        <div style="padding-left: 10px;">
        <pre >
-10.What is the output of the following C snippet?
+
+10.
 
 #include &ltstdio.h&gt 
 #define scanf  "%s Quick Prep" 
@@ -460,7 +468,7 @@ main()
        </pre>
        </div >
        <p>
-           <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
+           <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample10" aria-expanded="false" aria-controls="collapseExample">
            Solution
            </button>
        </p>
@@ -485,7 +493,7 @@ So Output  : %s Quick Prep Quick Prep
 <a  id="resp1" href="main2.html">Next ></a>
 <br><br><br>
 
-
+</div>
 <footer class="footer">
     <div class="container">
         <div class="row1">
