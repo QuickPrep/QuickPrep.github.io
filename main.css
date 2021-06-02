@@ -327,16 +327,18 @@ nav ul li a{
   header{
       width:470px;
   }
+  
   }
 @media(max-width: 574px){
     .footer-col{
       width: 100%;
+      
   }
   header{
       width:470px;
   }
   footer{
-      width:470px;
+      width:500px;
   }
   }
 
