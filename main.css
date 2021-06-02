@@ -322,10 +322,13 @@ header {
       display: none;
     
   }
+  topnav{
+      width:450px;
+  }
   .topnav a{
       overflow:auto;
       padding: 12px;
-      font-size: 10px;
+      font-size: 13px;
   }
 /*--------------------mobile navigation---------------------
   #sidenav{
