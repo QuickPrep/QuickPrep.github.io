@@ -23,9 +23,7 @@ ul{
 }
 .footer{
 	background-color: #24262b;
-    padding: 70px 0;
-
-    
+    padding: 70px 0;    
 }
 .footer-col{
    width: 25%;
@@ -335,6 +333,9 @@ nav ul li a{
       width: 100%;
   }
   header{
+      width:470px;
+  }
+  footer{
       width:470px;
   }
   }
