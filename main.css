@@ -322,7 +322,9 @@ header {
       display: none;
     
   }
-  
+  .topnav{
+      width:500px;
+  }
   .topnav a{
       overflow:auto;
       padding: 9px;
