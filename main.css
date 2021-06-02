@@ -323,10 +323,12 @@ header {
     
   }
   
-  .topnav{
-      display: none;
+  .topnav a{
+      overflow:auto;
+      padding: 9px;
+      font-size: 14px;
   }
-/*--------------------mobile navigation---------------------*/
+/*--------------------mobile navigation---------------------
   #sidenav{
     width: 250px;
     height: 100vh;
@@ -367,7 +369,7 @@ nav ul li a{
     margin-top: 15px;
 
 }
-
+*/
 
   }
 @media(max-width: 574px){
