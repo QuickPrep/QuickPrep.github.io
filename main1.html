@@ -17,7 +17,46 @@
 </head>
     
     <body >
-       
+       <header id="h1">
+           <h2 style="text-align: center;padding: 10px;">QuickPrep</h2>
+            <div id="sidenav">
+                <nav>
+                    
+                    <ul>
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="main1.html">C</a></li>
+                        <li> <a href="#">Java</a></li>
+                        <li> <a href="#">Python</a></li>
+                        <li> <a href="#">Interview Prep</a></li>
+                        <li> <a href="#">Blogs</a></li>
+                        <li> <a href="https://wa.me/918861144715" target="_blank">Contact Us</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div id="menuBtn">
+                <img src="menu.png" id="menu">
+            </div>
+            <script>
+                var menuBtn = document.getElementById("menuBtn")
+                var sidenav = document.getElementById("sidenav")
+                var menu = document.getElementById("menu")
+
+                sidenav.style.right = "-250px";
+
+                menuBtn.onclick =function(){
+                    if(sidenav.style.right == "-250px"){
+                        sidenav.style.right ="0";
+                        menu.src ="close.png";
+                    }
+                    else{
+                        sidenav.style.right="-250px";
+                        menu.src ="menu.png";
+
+                    }
+                }
+            </script>
+       </header>
         <div class="topnav">
             <a href="index.html">Home</a>
             <a  class="active" href="main1.html">C</a>

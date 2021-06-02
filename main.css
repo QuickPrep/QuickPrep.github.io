@@ -116,11 +116,9 @@ ul{
 }
 
 header { 
-    background-color: #0a75ad;
-    text-align: left;
+    background-color: black;
     margin-top: 10px;
     height: 60px;
-    font-size: 40px;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     color:#ffffff;
@@ -263,6 +261,9 @@ header {
 .banner-btn a:hover {
     color: black;
 }
+#h1{
+    display:none
+}
 
 
 
@@ -322,20 +323,20 @@ header {
       display: none;
     
   }
-  topnav{
-      width:450px;
+  .topnav{
+      display:none;
   }
-  .topnav a{
-      overflow:auto;
-      padding: 12px;
-      font-size: 13px;
+  #h1{
+      display:block;
   }
-/*--------------------mobile navigation---------------------
+  
+/*--------------------mobile navigation---------------------*/
   #sidenav{
     width: 250px;
     height: 100vh;
     position: fixed;
     right: -250px;
+    
     top: 0;
     background: #31cbbb;
     z-index: 2;
@@ -355,14 +356,14 @@ nav ul li a{
 #menuBtn{
     width: 50px;
     height: 50px;
-    background: #31cbbb;
     text-align: center;
-    position:fixed;
+    position:absolute;
     right: 20px;
     top:5px;
     border-radius: 8px;
     z-index: 3;
     cursor: pointer;
+    margin-top: 9px;
     
     
 }
@@ -371,7 +372,7 @@ nav ul li a{
     margin-top: 15px;
 
 }
-*/
+
 
   }
 @media(max-width: 480px){
