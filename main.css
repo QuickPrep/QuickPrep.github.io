@@ -374,7 +374,7 @@ nav ul li a{
 */
 
   }
-@media(max-width: 574px){
+@media(max-width: 480px){
     .footer-col{
       width: 100%;
       
@@ -391,6 +391,9 @@ nav ul li a{
   #resp{
       width:400px;
   }
+  .topnav{
+    width:400px;
+}
   }
 
 
