@@ -114,6 +114,7 @@ ul{
     font-size: 18px;
     margin-left: 30px;
     border-radius: 25px 0px 0px 0px;
+    
 }
 #resp1{
     margin-left: 20px;
@@ -333,7 +334,11 @@ header {
 .card-deck{
     display:flex;
     margin-left: 50px;
+    
 }
+
+
+
 
 
 
@@ -389,6 +394,8 @@ header {
   #h1{
       display:block;
   }
+
+  
   
 /*------------------------------------------mobile navigation-------------------------------------------------------------*/
   #sidenav{
