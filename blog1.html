@@ -1,0 +1,500 @@
+<html>
+    <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<style>
+     body{
+                background-color: #f2f2f2;
+            }
+            #con{
+                margin-left: 390px;
+            }
+            
+            .contact{
+                background-color: white;
+                width:700px;
+                padding: 80px;     
+            }
+            
+</style>
+</head>
+<body>
+    <header id="h1">
+        <h2 style="text-align:left;padding: 10px;">QuickPrep</h2>
+         <div id="sidenav">
+             <nav>
+                 
+                 <ul>
+                     <li> <a href="index.html">HOME</a></li>
+                     <li> <a href="main1.html">C</a></li>
+                         <li><a id="dd" href="main1.html">1. C Snippets</a></li>
+                         <li><a id="dd" href="#">2. C Basics</a></li>
+                     <li> <a href="#">Java</a></li>
+                     <li> <a href="#">Python</a></li>
+                     <li> <a href="#">Interview Prep</a></li>
+                     <li> <a href="blog1.html">Blogs</a></li>
+                     <li> <a href="contact.html">Contact Us</a></li>
+                     
+                 </ul>
+             </nav>
+         </div>
+         <div id="menuBtn">
+             <img src="menu.png" id="menu">
+         </div>
+         <script>
+             var menuBtn = document.getElementById("menuBtn")
+             var sidenav = document.getElementById("sidenav")
+             var menu = document.getElementById("menu")
+
+             sidenav.style.right = "-250px";
+
+             menuBtn.onclick =function(){
+                 if(sidenav.style.right == "-250px"){
+                     sidenav.style.right ="0";
+                     menu.src ="close.png";
+                 }
+                 else{
+                     sidenav.style.right="-250px";
+                     menu.src ="menu.png";
+
+                 }
+             }
+         </script>
+    </header>
+    
+     <div class="topnav">
+         <a href="index.html">Home</a>
+         <div class="dropdown">
+             <a class="dropbtn">C</a>
+             <div class="dropdown-content">
+                 <a href="main1.html">C Snippets</a><br>
+                 <a href="#">C Basics</a>
+             </div>
+         </div>
+         <a href="#">Java</a>
+         <a href="#">Python</a>
+         <a href="#">Interview prep</a>
+         <a class="active" href="blog1.html">Blogs</a>
+         <a href="contact.html">Contact us.</a>
+       </div>
+     <br>
+<!---End of basic------------------------------------------------------------------------------------------------------------------------->
+
+
+   <div class="card-deck">
+<div class="card border-success mb-3" style="max-width: 1100px;margin-top: 30px;">
+    <div class="card-header bg-transparent border-success"><h2 style="font-family: 'Poppins', sans-serif;;">Classes and Object in Java</h2></div>
+    <div class="card-body text-success">
+      <h5 class="card-title" style="color: red;font-family: 'Poppins', sans-serif;">Introduction</h5>
+      <p class="card-text" ><pre style="color: black;font-family:'Poppins', sans-serif;font-size: 17px;">
+
+As we all know about the primitive data types in Java, such as Boolean , int, float, double, char, byte, short, long 
+which are basically pre-defined data-types. And there arises a question !!!
+What if we want to Declare our own Data types(and variables) ??
+And here where The Classes(and Objects) comes into Picture.
+And Yes, Classes are called as Reference Data-type.
+
+Having said about the actual core content about the importance and need of Class, Just  go through the blog keeping 
+in mind the primitive data types as reference to understand clearly about Classes in Java.
+
+What are Classes and Objects  ??
+CLASS:
+•Classes are something which describes the real entity, more precisely the OBJECTS.
+•Classes are not a real-world Entity, which is just a template or Blueprint or prototype for the objects.
+•As same as Architect designing blueprint for the house construction before the actual construction of the house starts.
+•Classes does not occupy memory as it is not a real world entity.
+What does  Class Consist of ?
+1.Object State( Instance variables)
+2.Object behaviour (Methods)
+3.Constructor
+4.Blocks
+5.Nested class and interface
+
+SYNTAX : 
+Class ClassName { 
+Object State (Instance Variable )
+Object Behaviours (Methods)
+Constructor 
+Blocks 
+Nested Class And Interface 
+}
+OBJECT:
+•The Real-world entity about which the class describes is called as OBJECT.
+•Objects are Real World Entity and do occupy the memory.
+•An Object has an State and Behaviour.
+SYNTAX : We can create an object using new operator.
+ClassName ObjectName = new ClassName();
+
+Let me give an real world example to understand the classes and objects more precisely.
+
+M24 is a Gun ,M416 is a Gun , AKM is a Gun .Here M24,M416,AKM are the objects which are Real entity
+(Which has identity,state,Behaviour).All 3 are described by the Class Gun .Therefore Class describes objects
+ in real.
+
+Gun Class acts as template which is describing the objects M24,M416,AKM.
+
+In other words,we can say that M24,M416,AKM are types of Gun Class.Which are as same as 3,8,4 are all of int 
+data type as quoted earlier about primitive data types in Introduction.
+Hoping the above concepts got clearing with the analogy,heading towards the CHARACTERISTICS OF OBJECT.
+
+CHARACTERISTICS OF OBJECT:
+OBJECT BEHAVIOUR: 
+•Anything that an object can do is known as an Object behavior.
+•Considering the above example, M24,M416,AKM- All 3 can Fire,load,unload etc. Fire , load ,unload are object behaviour.
+•Question arises,how do we know about all the behaviours that an object possesses??
+•The answer is that they all are described in the class.
+•Below is the partial demonstration of object behaviour that are described in the class. The complete real program will
+be shown down later.
+Class Gun
+{
+fire ()
+{
+}
+load()
+{
+}
+unload()
+{
+}
+}
+The Above description says,Weapon is a class ,whose objects can fire,load,unload.
+
+OBJECT STATE:
+•Anything that an object owns is known as an Object State .
+•Considering the above example , M24 , M416 ,AKM – All three own weight,caliber etc. Weight and size are called Object states. 
+•Then question arises again that how do we know that what  all the states does an object owns?? 
+•And the answer is that they are described in the class.
+•Below is the partial demonstration of object States that are described in the class. The complete real program will be
+shown down later.
+Class Gun 
+{
+weight = 1900 ;
+caliber = 50 ;
+fire () 
+{
+}
+load () 
+{
+}
+Unload () 	
+{
+}
+} 
+
+WHAT ARE METHODS AND INSTANCE VARIABLES ??
+The Behaviour we discusses above is called as Method(s).
+The States we spoke about is called as Instance Variables.
+In other words, fire() , load () ,unload () are the Methods,
+weight and caliber are the instance variables.
+
+How to create an object?
+An object can be created using new operator,for example if we want to create an object AKM of Gun class , the syntax is given below 
+Gun akm = new Gun(); similarly
+Gun m24 = new Gun();
+
+The actual objects are created in the heap memory , and the information to reach them is stored in the reference variable on 
+the stack memory.Therefore,M24,M416,Akm are just the reference variables on the stack,which contains the information about 
+the exact location of heap where these objects reside.
+Instead of calling M24,M416,AKM as object reference variable , we call it simply as objects. 
+
+How to make an Object Behave ?
+We can make an Object Behave simply using dot (.) operator.
+Syntax :object-name.behaviour; 
+If we want to make AKM to fire, then the syntax is akm.fire(); Similarly,
+If we want to make M24 to load, then the syntax is m24.load().
+If we want to make M416 to unload,then the syntax goes like m416.unload().
+
+How to print an object’s state?
+We can print object’s state using the following syntax 
+System.out.println(object-name.object-state); 
+For example: If we want to print akm’s weight,follow the  below syntax
+System.out.println(akm.weight); similarly
+If we want to print m24’s caliber ,follow the below syntax 
+System.out.println(m24.caliber);
+
+
+
+
+
+
+Hoping that you understand all the above concepts, Let us write an executable program which includes the above topics.
+At first,you have to create class and add instance variables(object state) and methods(object-behaviour) in it. 
+And create another class and add main method in it and create an object and make that object to behave and also 
+print its object’s state. 
+(If you don’t understand about methods more clearly.it will discussed in detail later.)
+class Gun
+{
+int weight=1900;
+int caliber=50;
+
+void fire()
+{
+System.out.println(“FIRED !!!!!!”);
+}
+void load()
+{
+System.out.println(“LOADED !!!!”);
+}  
+void unload()
+{
+System.out.println(“UNLOADED !!!”);
+}
+}
+public class WeaponTest
+{
+public static void main (String [] args)
+{
+Gun m24 = new Gun();
+Gun m416 = new Gun();
+Gun akm= new Gun();
+m24.fire();
+m416.load();
+akm.unload();
+System.out.println(akm.weight);
+System.out.println(m24.caliber);
+}
+
+OUTPUT : 
+$ java WeaponTesting 
+FIRED !!!!!!
+LOADED !!!!
+UNLOADED !!!
+1900
+50
+
+In the above code,there are two classes.The one  that contains main method called Driver Class/Launcher Class 
+and another called Application class.
+And whole execution of code begins from main method
+
+
+
+OBJECT INITIALIZATION TECHNIQUES : 
+There are three ways which you can initialize your objects : 
+1.By Reference variable . 
+2.By Method
+3.By Constructor
+
+INITIALISING BY REFERENCE VARIABLE :
+Initialising the object is nothing but dumping the data into the object.
+So we can dump the data into object using reference variable . 
+Below is the example  program : 
+class Gun {
+int weight;
+int caliber;
+}
+class Weapon {
+public static void main(String args[]){
+Gun akm = new Gun() ;
+akm.weight =1900;
+akm.caliber =50;
+System.out.println(akm.weight + “ “ + akm.caliber ) ;
+}
+}
+
+
+Output
+1900 50  
+
+INITIALIZATION THROUGH METHOD : 
+We can even initialize our objects even by method by passing the arguments to the methods in the class.
+ Go through the below program to understand more clearly.
+class Gun { 
+int weight;
+int caliber;
+void insert() (int w,int c)
+{
+weight=w;
+caliber=c;
+}
+void display()
+{
+System.out.println(“weight + “ ” + height);
+}
+class weapontest {
+public static void main (String [] args) {
+Gun akm = new Gun();
+Gun m24=new Gun();
+akm.insert(1900,50);
+m24.insert(1800,45);
+akm.display();
+m24.display();
+}
+}
+
+OUTPUT :
+1900 50
+1800 45
+
+INITIALIZATION THROUGH A CONSTRUCTOR:
+Let us now discuss about an interesting way to initialize the objects, i.e by using CONSTRUCTOR.
+
+•Constructors are the special piece of  code inside the class,which gets automatically called once the objects get created.
+• The constructors will have the same name as the class name for which the object is getting created .
+•Constructors don’t have return type,therefore it is not a method in java
+•The main use of the constructors is to perform initialization of intialization variables.
+•The initialization code can be put inside the constructor ,so that when an object is created ,it automatically 
+initializes the instance variable .
+
+class Gun
+{
+int weight;
+int caliber;
+Gun()
+{
+System.out.println(“I am inside Constructor”);
+weight=1600;
+calier=40;
+} 
+void display()
+{
+System.out.println(weight);
+System.out.println(caliber);
+}
+}
+public class WeaponTesting{
+public static void main ( String [] args ) 
+Gun akm = new Gun() ;      
+Gun m24 = new Gun();
+akm.display();
+m24.display();
+}
+}
+
+
+
+OUTPUT :
+I am inside constructor 
+I am inside constructor
+1600
+40
+1600
+40
+
+METHODS IN JAVA:
+• A method is a Place where some activity happens.
+•Activity includes a mathematical operations,Logical operations ,To print something on the screen based 
+on the particular conditions.
+•Anything and everything in java programming happens to be inside a method
+
+How do ‘Methods’ Work ?
+•Every method has to be called by some other method.
+•The one who calls ‘the method’is called ‘Caller method’.
+•The one ‘Who got called’ is called ‘Called method’.
+•For example: If a Boyfriend calls Girlfriend, Boyfriend is the Caller Method and the Girlfriend is the Called Method
+•The Called method where actually the activity happens is called Method definition.
+•The Method Definition takes the following Syntax : 
+    return-type MethodName (Parameter-list)
+{
+            //Activity to be done
+}
+In the above method,
+•return-type indicates that the type of value that the called method should return to the caller method.
+if there is no value to be returned then we can make it as void
+•MethodName: it is the name of called method
+•Parameter-list : List of parameters that the caller method passes to called method.if there is nothing
+ to be passed then we can leave it empty
+
+Let us understand with an example .
+class Bfgf
+{
+void boyfriend ()
+{
+System.out.println(“I am here Sweet Heart”);
+}
+void girlfriend()
+{
+Sytem.out.println(“I am calling boyfriend”);
+boyfriend();
+System.out.println(“My Boyfriend Replied”)
+}
+    }
+public class TestingMethod
+{
+Public static void main(String [] args)
+{  
+Bfgf bg = new Bfgf();
+bg.girlfriend();
+System.out.println(“End of the program”);
+}
+}
+
+OUTPUT:
+$java TestingMethod
+I am calling boyfriend
+I am here Sweet heart
+My Boyfriend replied
+End of the program
+
+When we run the program,JVM calls the main() method-Where actually the execution of the program starts.
+After that we are creating an object bg of type bfgf and calling girlfriend method using dot operator.
+so here girlfriend method becomes the called method and main method becomes caller method.
+The program now enters the girlfriend() method definition.And also noticing that we are not passing any 
+parameter to called method ,hence the called method does not accept any parameters.and the return type of
+called method is void because it does not return any value to main method.after entering into the girfriend
+method ‘I am calling Boyfriend’ will be printed and this method is calling another method i.e girlfriend method 
+is calling boyfriend method and passing no arguments to it.Later the control goes to boyfriend method and
+‘I am here Sweet heart’ will be printed and the control goes back to girlfriend method and again 
+‘My boyfriend replied’ and later again the control goes back to main method and ‘End of the program will be printed’.
+
+In a overview , main() called girlfriend() , girlfriend called boyfriend() ,boyfriend did his work and got back to
+ girlfriend ,and girlfriend did her work and got back to main().and the program terminates.
+
+
+</pre>
+        </p>
+    </div>
+    <div class="card-footer bg-transparent border-success">Footer</div>
+  </div>
+
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
