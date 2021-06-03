@@ -10,6 +10,7 @@ body{
     
 }
 
+
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -21,6 +22,7 @@ body{
 ul{
 	list-style: none;
 }
+/*---------------------------------------------------------------Footer-------------------------------------------------------------------------------------*/
 .footer{
 	background-color: #24262b;
     padding: 70px 0;    
@@ -115,6 +117,7 @@ ul{
     margin-left: 10px;
 }
 
+/*--------------------------------------------------Header---------------------------------------------*/
 header { 
     background-color: black;
     margin-top: 10px;
@@ -128,6 +131,8 @@ header {
     margin-left: 50px;
     
 }
+
+/*----------------------------------------------------Whatsapp--------------------------------------------------*/
 .whatsapp_float {
 	position:fixed;
 	width:60px;
@@ -161,7 +166,7 @@ header {
     }
 }
 
-/*index page*/
+/*----------------------------------------------------------------index page------------------------------------------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -183,13 +188,13 @@ header {
     text-align: center;
     padding-top: 200px;
 }
-/* Add a black background color to the top navigation */
+/* ---------------------------------------------Add a black background color to the top navigation------------------------------------ */
 .topnav {
     background-color:black;
     overflow: hidden;
   }
   
-  /* Style the links inside the navigation bar */
+  /*------------------------------------------------ Style the links inside the navigation bar-------------------------------------------- */
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -199,15 +204,15 @@ header {
     font-size: 17px;
   }
   
-  /* Change the color of links on hover */
+  /*------------------------------------------------------ Change the color of links on hover ---------------------------------------------*/
   .topnav a:hover {
-    background-color:lightgreen;
+    background-color: red;
     color: white ;
   }
   
-  /* Add a color to the active/current link */
+  /* -------------------------------------------------------Add a color to the active/current link------------------------------------------ */
   .topnav a.active {
-    background-color:lightgreen;
+    background-color:red;
     color: white;
   }
 .banner-text{
@@ -223,7 +228,7 @@ header {
 }
 .banner-text p{
     font-size: 20px;
-    font-style: italic;
+    font-style:cursive;
     
 }
 .banner-btn{
@@ -264,6 +269,44 @@ header {
 #h1{
     display:none
 }
+
+/*--------------------------------------------dropdown-----------------------------*/
+
+.dropdown-content {
+    display: none;
+    position:fixed;
+  background-color: black;
+  min-width: 130px;
+  margin-top: 52px;
+  margin-left: -45px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-width: 30px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+    text-align: left;
+  }
+  .dropdown-content :hover {
+    background-color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  display: inline-block;
+}
+.droptn{
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 
 
 
@@ -330,7 +373,7 @@ header {
       display:block;
   }
   
-/*--------------------mobile navigation---------------------*/
+/*------------------------------------------mobile navigation-------------------------------------------------------------*/
   #sidenav{
     width: 250px;
     height: 100vh;
