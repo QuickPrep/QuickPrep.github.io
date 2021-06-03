@@ -91,6 +91,13 @@ ul{
 }
 .intend{
     margin-left: 34px;
+    line-height: 40px;
+}
+.intend :hover{
+    padding-left:8px;
+    color:#ffffff;
+    transition: all 0.5s ease;
+    
 }
 
 #back{
