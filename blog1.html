@@ -1,5 +1,15 @@
 <html>
     <head>
+        <style>
+            .big::first-letter{
+                font-size: 200%;
+                color: red;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+            }
+    
+        </style>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -102,46 +112,42 @@
 <div class="card border-success mb-3" style="max-width: 1100px;margin-top: 30px;">
     <div class="card-header bg-transparent border-success"><h2 style="font-family: 'Poppins', sans-serif;;">Classes and Object in Java</h2></div>
     <div class="card-body text-success">
-      <h5 class="card-title" style="color: red;font-family: 'Poppins', sans-serif;">Introduction</h5>
+      <h5 class="card-title" style="color: red;font-family: 'Poppins', sans-serif;font-size: 200%;">Introduction</h5>
       <p class="card-text" ><pre style="color: black;font-family:'Poppins', sans-serif;font-size: 17px;">
-
-As we all know about the primitive data types in Java, such as Boolean , int, float, double, char, byte, short, long 
+<p class="big">As we all know about the primitive data types in Java, such as Boolean , int, float, double, char, byte, short, long 
 which are basically pre-defined data-types. And there arises a question !!!
 What if we want to Declare our own Data types(and variables) ??
 And here where The Classes(and Objects) comes into Picture.
 And Yes, Classes are called as Reference Data-type.
 
 Having said about the actual core content about the importance and need of Class, Just  go through the blog keeping 
-in mind the primitive data types as reference to understand clearly about Classes in Java.
-
-What are Classes and Objects  ??
-CLASS:
-•Classes are something which describes the real entity, more precisely the OBJECTS.
+in mind the primitive data types as reference to understand clearly about Classes in Java.</p>
+<h1 style="font-size: larger;color: red;font-weight: 400;">What are Classes and Objects  ??</h1>
+<h2>CLASS:</h2>•Classes are something which describes the real entity, more precisely the OBJECTS.
 •Classes are not a real-world Entity, which is just a template or Blueprint or prototype for the objects.
 •As same as Architect designing blueprint for the house construction before the actual construction of the house starts.
 •Classes does not occupy memory as it is not a real world entity.
-What does  Class Consist of ?
-1.Object State( Instance variables)
+
+<h5>What does  Class Consist of ?</h5>1.Object State( Instance variables)
 2.Object behaviour (Methods)
 3.Constructor
 4.Blocks
 5.Nested class and interface
 
-SYNTAX : 
-Class ClassName { 
+<h5>SYNTAX :</h5>Class ClassName { 
 Object State (Instance Variable )
 Object Behaviours (Methods)
 Constructor 
 Blocks 
 Nested Class And Interface 
 }
-OBJECT:
-•The Real-world entity about which the class describes is called as OBJECT.
+
+<h2>OBJECT:</h2>•The Real-world entity about which the class describes is called as OBJECT.
 •Objects are Real World Entity and do occupy the memory.
 •An Object has an State and Behaviour.
 SYNTAX : We can create an object using new operator.
 ClassName ObjectName = new ClassName();
-
+<p>
 Let me give an real world example to understand the classes and objects more precisely.
 
 M24 is a Gun ,M416 is a Gun , AKM is a Gun .Here M24,M416,AKM are the objects which are Real entity
@@ -152,11 +158,9 @@ Gun Class acts as template which is describing the objects M24,M416,AKM.
 
 In other words,we can say that M24,M416,AKM are types of Gun Class.Which are as same as 3,8,4 are all of int 
 data type as quoted earlier about primitive data types in Introduction.
-Hoping the above concepts got clearing with the analogy,heading towards the CHARACTERISTICS OF OBJECT.
+Hoping the above concepts got clearing with the analogy,heading towards the CHARACTERISTICS OF OBJECT.</p>
 
-CHARACTERISTICS OF OBJECT:
-OBJECT BEHAVIOUR: 
-•Anything that an object can do is known as an Object behavior.
+<h1 style="font-size: larger;color: red;font-weight: 400;">CHARACTERISTICS OF OBJECT:</h1><h5>OBJECT BEHAVIOUR:</h5>•Anything that an object can do is known as an Object behavior.
 •Considering the above example, M24,M416,AKM- All 3 can Fire,load,unload etc. Fire , load ,unload are object behaviour.
 •Question arises,how do we know about all the behaviours that an object possesses??
 •The answer is that they all are described in the class.
@@ -176,8 +180,8 @@ unload()
 }
 The Above description says,Weapon is a class ,whose objects can fire,load,unload.
 
-OBJECT STATE:
-•Anything that an object owns is known as an Object State .
+
+<h5>OBJECT STATE:</h5>•Anything that an object owns is known as an Object State .
 •Considering the above example , M24 , M416 ,AKM – All three own weight,caliber etc. Weight and size are called Object states. 
 •Then question arises again that how do we know that what  all the states does an object owns?? 
 •And the answer is that they are described in the class.
@@ -198,14 +202,12 @@ Unload ()
 }
 } 
 
-WHAT ARE METHODS AND INSTANCE VARIABLES ??
-The Behaviour we discusses above is called as Method(s).
+<h1 style="font-size: larger;color: red;font-weight: 400;">WHAT ARE METHODS AND INSTANCE VARIABLES ??</h1>The Behaviour we discusses above is called as Method(s).
 The States we spoke about is called as Instance Variables.
 In other words, fire() , load () ,unload () are the Methods,
 weight and caliber are the instance variables.
 
-How to create an object?
-An object can be created using new operator,for example if we want to create an object AKM of Gun class , the syntax is given below 
+<h5>How to create an object?</h5>An object can be created using new operator,for example if we want to create an object AKM of Gun class , the syntax is given below 
 Gun akm = new Gun(); similarly
 Gun m24 = new Gun();
 
@@ -214,15 +216,13 @@ the stack memory.Therefore,M24,M416,Akm are just the reference variables on the 
 the exact location of heap where these objects reside.
 Instead of calling M24,M416,AKM as object reference variable , we call it simply as objects. 
 
-How to make an Object Behave ?
-We can make an Object Behave simply using dot (.) operator.
+<h5>How to make an Object Behave ?</h5>We can make an Object Behave simply using dot (.) operator.
 Syntax :object-name.behaviour; 
 If we want to make AKM to fire, then the syntax is akm.fire(); Similarly,
 If we want to make M24 to load, then the syntax is m24.load().
 If we want to make M416 to unload,then the syntax goes like m416.unload().
 
-How to print an object’s state?
-We can print object’s state using the following syntax 
+<h5>How to print an object’s state?</h5>We can print object’s state using the following syntax 
 System.out.println(object-name.object-state); 
 For example: If we want to print akm’s weight,follow the  below syntax
 System.out.println(akm.weight); similarly
@@ -232,21 +232,20 @@ System.out.println(m24.caliber);
 
 
 
-
-
 Hoping that you understand all the above concepts, Let us write an executable program which includes the above topics.
-At first,you have to create class and add instance variables(object state) and methods(object-behaviour) in it. 
+At first,you have to create <B>class</B> and add <B>instance variables</B>(object state) and<B> methods</B>(object-behaviour) in it. 
 And create another class and add main method in it and create an object and make that object to behave and also 
 print its object’s state. 
 (If you don’t understand about methods more clearly.it will discussed in detail later.)
-class Gun
+
+<div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">class Gun
 {
 int weight=1900;
 int caliber=50;
 
 void fire()
 {
-System.out.println(“FIRED !!!!!!”);
+System.out.println(“FIRED !!!!!!”)
 }
 void load()
 {
@@ -270,32 +269,28 @@ akm.unload();
 System.out.println(akm.weight);
 System.out.println(m24.caliber);
 }
-
-OUTPUT : 
-$ java WeaponTesting 
+</div>
+<h5>OUTPUT :</h5><div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">$ java WeaponTesting 
 FIRED !!!!!!
 LOADED !!!!
 UNLOADED !!!
 1900
-50
+50</div>
 
-In the above code,there are two classes.The one  that contains main method called Driver Class/Launcher Class 
-and another called Application class.
-And whole execution of code begins from main method
+In the above code,there are two classes.The one  that contains main method called <B>Driver Class/Launcher Class</B> 
+and another called <B>Application class.</B>
+And whole execution of code begins from <B>main method</B>
 
 
-
-OBJECT INITIALIZATION TECHNIQUES : 
-There are three ways which you can initialize your objects : 
-1.By Reference variable . 
+<h1 style="font-size: larger;color: red;font-weight: 400;">OBJECT INITIALIZATION TECHNIQUES :</h1>There are three ways which you can initialize your objects : 
+<h6>1.By Reference variable . 
 2.By Method
-3.By Constructor
+3.By Constructor</h6>
 
-INITIALISING BY REFERENCE VARIABLE :
-Initialising the object is nothing but dumping the data into the object.
+<h5>INITIALISING BY REFERENCE VARIABLE :</h5>Initialising the object is nothing but dumping the data into the object.
 So we can dump the data into object using reference variable . 
 Below is the example  program : 
-class Gun {
+<div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">class Gun {
 int weight;
 int caliber;
 }
@@ -306,16 +301,12 @@ akm.weight =1900;
 akm.caliber =50;
 System.out.println(akm.weight + “ “ + akm.caliber ) ;
 }
-}
+}</div>
+<h5>Output</h5><div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">1900  50</div>  
 
-
-Output
-1900 50  
-
-INITIALIZATION THROUGH METHOD : 
-We can even initialize our objects even by method by passing the arguments to the methods in the class.
+<h5>INITIALIZATION THROUGH METHOD :</h5>We can even initialize our objects even by method by passing the arguments to the methods in the class.
  Go through the below program to understand more clearly.
-class Gun { 
+ <div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">class Gun { 
 int weight;
 int caliber;
 void insert() (int w,int c)
@@ -336,14 +327,11 @@ m24.insert(1800,45);
 akm.display();
 m24.display();
 }
-}
+}</div>
+<h5>OUTPUT :</h5><div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">1900 50
+1800 45</div>
 
-OUTPUT :
-1900 50
-1800 45
-
-INITIALIZATION THROUGH A CONSTRUCTOR:
-Let us now discuss about an interesting way to initialize the objects, i.e by using CONSTRUCTOR.
+<h5>INITIALIZATION THROUGH A CONSTRUCTOR:</h5>Let us now discuss about an interesting way to initialize the objects, i.e by using <B>CONSTRUCTOR.</B>
 
 •Constructors are the special piece of  code inside the class,which gets automatically called once the objects get created.
 • The constructors will have the same name as the class name for which the object is getting created .
@@ -351,8 +339,7 @@ Let us now discuss about an interesting way to initialize the objects, i.e by us
 •The main use of the constructors is to perform initialization of intialization variables.
 •The initialization code can be put inside the constructor ,so that when an object is created ,it automatically 
 initializes the instance variable .
-
-class Gun
+<div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">class Gun
 {
 int weight;
 int caliber;
@@ -375,35 +362,30 @@ Gun m24 = new Gun();
 akm.display();
 m24.display();
 }
-}
+}</div>
 
-
-
-OUTPUT :
-I am inside constructor 
+<h5>OUTPUT :</h5><div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">I am inside constructor 
 I am inside constructor
 1600
 40
 1600
-40
+40</div>
 
-METHODS IN JAVA:
-• A method is a Place where some activity happens.
+<h1 style="font-size: larger;color: red;font-weight: 400;">METHODS IN JAVA:</h1>• A method is a Place where some activity happens.
 •Activity includes a mathematical operations,Logical operations ,To print something on the screen based 
 on the particular conditions.
 •Anything and everything in java programming happens to be inside a method
 
-How do ‘Methods’ Work ?
-•Every method has to be called by some other method.
+<h5>How do ‘Methods’ Work ?</h5>•Every method has to be called by some other method.
 •The one who calls ‘the method’is called ‘Caller method’.
 •The one ‘Who got called’ is called ‘Called method’.
 •For example: If a Boyfriend calls Girlfriend, Boyfriend is the Caller Method and the Girlfriend is the Called Method
 •The Called method where actually the activity happens is called Method definition.
 •The Method Definition takes the following Syntax : 
-    return-type MethodName (Parameter-list)
+<div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">  return-type MethodName (Parameter-list)
 {
             //Activity to be done
-}
+}</div>
 In the above method,
 •return-type indicates that the type of value that the called method should return to the caller method.
 if there is no value to be returned then we can make it as void
@@ -412,7 +394,7 @@ if there is no value to be returned then we can make it as void
  to be passed then we can leave it empty
 
 Let us understand with an example .
-class Bfgf
+<div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">class Bfgf
 {
 void boyfriend ()
 {
@@ -433,14 +415,13 @@ Bfgf bg = new Bfgf();
 bg.girlfriend();
 System.out.println(“End of the program”);
 }
-}
+}</div>
 
-OUTPUT:
-$java TestingMethod
+<h5>OUTPUT:</h5><div style="border: 1px solid black; padding-left: 25px;padding-top: 15px;padding-bottom: 15px;background-color: lightgray;">$java TestingMethod
 I am calling boyfriend
 I am here Sweet heart
 My Boyfriend replied
-End of the program
+End of the program</div>
 
 When we run the program,JVM calls the main() method-Where actually the execution of the program starts.
 After that we are creating an object bg of type bfgf and calling girlfriend method using dot operator.
