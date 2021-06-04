@@ -406,16 +406,18 @@ header {
   #h1{
       display:block;
   }
+  body{
+      zoom: 89%;
+  }
 
   
   
 /*------------------------------------------mobile navigation-------------------------------------------------------------*/
   #sidenav{
     width: 250px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     right: -250px;
-    
     top: 0;
     background: #31cbbb;
     z-index: 2;
@@ -446,12 +448,13 @@ nav ul li{
     height: 50px;
     text-align: center;
     position:absolute;
-    right: 20px;
+    right: 5px;
     top:5px;
     border-radius: 8px;
     z-index: 3;
     cursor: pointer;
     margin-top: 9px;
+    
     
     
 }
