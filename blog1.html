@@ -7,7 +7,8 @@
                 font-family: 'Times New Roman', Times, serif;
                 font-weight: bold;
             }
-            @media screen and (min-width: 1200px ){
+            
+            @media screen and (min-width:1200px ){
                 .card-deck1{
                     display: none;
                 }
@@ -15,21 +16,27 @@
             
             @media screen and (max-width:770px){
                 .card-deck{
-                    display: none;
+                    display:none;
                 }
                 .avatar1{
                     width:140px;
                     height:100px;
                 }
+                .card-deck #mov{
+                    display: none;
+                }
+                
+               
                 
             }
-            
-    
             .avatar{
                     vertical-align: middle;
                     width: 320px;
                     height: 200px;
                     }
+            
+    
+           
         </style>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -125,13 +132,13 @@
          <a href="#">Interview prep</a>
          <a class="active" href="blog1.html">Blogs.</a>
          <a href="contact.html">Contact us.</a>
-       </div>
+     </div>
      <br>
 <!---End of basic------------------------------------------------------------------------------------------------------------------------->
 
 
-   <div class="card-deck">
-<div class="card border-success mb-3" style="max-width: 1100px;margin-top: 30px;margin-left: 50px;">
+<div class="card-deck">
+<div class="card border-success mb-3" style="max-width: 1100px;margin-top: 30px;margin-left: 10px;">
     <div class="card-header bg-transparent border-success"><h2 style="font-family: 'Poppins', sans-serif;;">Classes and Object in Java</h2></div>
     <div class="card-body text-success">
       <h5 class="card-title" style="color: red;font-family: 'Poppins', sans-serif;font-size: 200%;">Introduction</h5>
@@ -472,9 +479,28 @@ In a overview , main() called girlfriend() , girlfriend called boyfriend() ,boyf
     </div>
     <div class="card-footer bg-transparent border-success">Footer</div>
   </div>
+ <!----------------------Content--------------------------------------> 
+ <div id="mov" style="margin-left: 40px;">
+    <div class="card" style="width: 19rem;margin-top: 29px;height: 400px;position:relative;font-family: 'Poppins',sans-serif;border-radius:0px 0px 20px 20px;border: 1px solid black;">
+      <div style="background-color:black;" class="card-header">
+        <h2 style="color: white;">Content</h2>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a id="content" href="blog1.html"><h6 >1.Classes and Objects in Java</h6></a></li>
+        <li class="list-group-item"><a id="content"  href="blog1.html"><h6 >2.Java Interview Questions </h6></a></li>
+        <li class="list-group-item"><a id="content"  href="blog1.html"><h6 >3.Python Interview Questions</h6></a></li>
+      </ul>
+    </div>
+    </div>
+    
+
+<!---------------Content----------------------------------------------------------------------------------------------------------->
 
 
-  <div class="card-deck1">
+
+
+<div class="card-deck1">
+      
     <div class="card border-success mb-3" style="max-width: 470px;margin-top: 10px; margin-left:-100px;">
         <div class="card-header bg-transparent border-success"><h2 style="font-family: 'Poppins', sans-serif;;">Classes and Object in Java</h2></div>
         <div class="card-body text-success">
@@ -915,38 +941,62 @@ got back to main().and the program terminates.
     </pre>
             </p>
         </div>
-        <div class="card-footer bg-transparent border-success">Footer</div>
+        <div id="mov1" style="margin-left: 40px;">
+            <div class="card" style="width: 23rem;margin-top: 29px;height: 300px;font-family: 'Poppins',sans-serif;border-radius:0px 0px 20px 20px;border: 1px solid black;">
+              <div style="background-color:black;" class="card-header">
+                <h2 style="color: white;">Content</h2>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a id="content" href="blog1.html"><h6 >1.Classes and Objects in Java</h6></a></li>
+                <li class="list-group-item"><a id="content"  href="blog1.html"><h6 >2.Java Interview Questions </h6></a></li>
+                <li class="list-group-item"><a id="content"  href="blog1.html"><h6 >3.Python Interview Questions</h6></a></li>
+              </ul>
+            </div>
+            </div>
+            <br><br>
       </div>
+</div>
 
-
-
-  
-
-    
-
-  
+</div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br>
+<footer class="footer">
+ <div class="container">
+     <div class="row1">
+         <div class="footer-col">
+             <h4>About us</h4>
+             <ul>
+                 <li><a style="margin-left: 40px;" href="#">This website is created in </a></li>
+                 <li><a style="margin-left: 40px;" href="#">mission to help students</a></li>
+                 <li><a style="margin-left: 40px;" href="#">regarding placements.</a></li>
+                
+             </ul>
+         </div>
+         
+         <div class="footer-col">
+             <h4>Contact us</h4>
+             <div class="intend">                
+             <a class="link" href="#">nithin.cse.rymec@gmail.com</a><br>
+             <a class="link" href="#">rahul.cse.rymec@gmail.com</a>
+             </div>
+         </div>
+             
+         <div class="footer-col">
+             <h4>Contributed by</h4>
+             <ul>
+                 <li><a style="margin-left: 40px;" href="#">Nithin Kalmath</a></li>
+                 <li><a style="margin-left: 40px;" href="#">Rahul Shetty</a></li>
+             </ul>
+         </div>
+     </div>
+ </div>
+ </footer>
+ 
 
 
 </body>

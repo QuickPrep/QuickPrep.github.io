@@ -333,9 +333,21 @@ header {
 /*-------------------------blogs-----------------------------------------------------------*/
 .card-deck{
     display:flex;
-    margin-left: 50px;
+    margin-left: 30px;
     
 }
+#content{
+    text-decoration:none;
+    color:black;
+    
+}
+#mov ul li a:hover{
+    color:red;   
+}
+#mov1 ul li a:hover{
+    color:red;
+}
+
 
 
 
