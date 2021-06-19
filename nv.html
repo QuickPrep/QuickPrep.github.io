@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML IN 10 Minutes</title>
-	<link rel="stylesheet" href="tenmin.css">
+	<link rel="stylesheet" href="nv.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script src="https://kit.fontawesome.com/abb9ad896f.js" crossorigin="anonymous"></script>
-<script src="tenmin.js"></script>
+<script src="nv.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 
@@ -30,20 +30,20 @@
         <img src="logo.png" alt="logo" class="src">
         <hr size="1" width="100%" color="white">  
         <ul>
-            <li class="int active"><a href="#int ">Introduction</a></li>
-            <li class="hed"><a href="#hed">Heading</a></li>
-            <li class="par"><a href="#par">Paragraph</a></li>
-            <li class="link"><a href="#link">Links</a></li>
-            <li class="img"><a href="#img">Images</a></li>
-            <li class="tab"><a href="#tab">Tables</a></li>
-            <li class="cr"><a href="#cr">Rowspan/Colspan</a></li>
-            <li class="lis"><a href="#lis">List</a></li>
-            <li class="dl"><a href="#dl">Description List</a></li>
-            <li class="cl"><a href="#cl">Class Attribute</a></li>
-            <li class="i"><a href="#i">ID Attribute</a></li>
-            <li class="forms"><a href="#forms">Forms</a></li>
-            <li><a href="#c13">Elements</a></li>
-            
+            <li><a data-page="int" href="# ">Introduction</a></li>
+            <li><a data-page="hed" href="#">Heading</a></li>
+            <li><a data-page="par" href="#">Paragraph</a></li>
+            <li><a data-page="link" href="#">Links</a></li>
+            <li><a data-page="img"  href="#">Images</a></li>
+            <li><a data-page="tab" href="#">Tables</a></li>
+            <li><a data-page="cr" href="#">Rowspan/Colspan</a></li>
+            <li><a data-page="lis" href="#">List</a></li>
+            <li><a data-page="dl" href="#">Description List</a></li>
+            <li><a data-page="cl" href="#">Class Attribute</a></li>
+            <li><a data-page="i" href="#">ID Attribute</a></li>
+            <li><a data-page="forms" href="#">Forms</a></li>
+            <li><a data-page="c13" href="#">Elements</a></li>
+            <div class="bubble"></div>
 
         </ul> 
         
@@ -54,7 +54,7 @@
         
 
       <!---1st-->
-      <section id="int">
+      <section class="int">
           <div>
         
               <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML INTRODUCTION</div>
@@ -88,7 +88,7 @@
       </section>
     <hr size="1" width="100%" color="black">
       <!--2nd-->
-      <section id="hed">
+      <section class="hed">
       <div >
         
         <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML HEADING</div>
@@ -128,7 +128,7 @@
     </section>
     <hr size="1" width="100%" color="black">
       <!--3rd-->
-      <section id="par">
+      <section class="par">
       <div >
         <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML PARAGRAPH</div>
         <div class="card-deck">
@@ -159,7 +159,7 @@
     </section>
 <hr size="1" width="100%" color="black">
     <!--4th-->
-    <section id="link">
+    <section class="link">
     <div>
      <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML LINKS</div>
         <div class="card-deck">
@@ -194,7 +194,7 @@
 </section>
     <hr size="1" width="100%" color="black">
     <!--5th-->
-    <section id="img">
+    <section class="img">
     <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML IMAGES</div>
         <div class="card-deck">
@@ -229,7 +229,7 @@
     <hr size="1" width="100%" color="black">
 
      <!--6th-->
-     <section id="tab">
+     <section class="tab">
     <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML TABLES</div>
         <div class="card-deck">
@@ -277,7 +277,7 @@
 </section>
     <hr size="1" width="100%" color="black">
      <!--7th-->
-     <section id="cr">
+     <section class="cr">
      <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML COLSPAN AND ROWSPAN</div>
         <div class="card-deck">
@@ -314,7 +314,7 @@
 </section>
     <hr size="1" width="100%" color="black">
      <!--8th-->
-     <section id="lis">
+     <section class="lis">
      <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML LIST</div>
         <div class="card-deck">
@@ -360,7 +360,7 @@
 </section>
     <hr size="1" width="100%" color="black">
      <!--9th-->
-     <section id="dl">
+     <section class="dl">
      <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML DESCRIPTION LIST</div>
         <div class="card-deck">
@@ -398,7 +398,7 @@
     </section>
     <hr size="1" width="100%" color="black">
      <!--10th-->
-     <section id="cl" >
+     <section class="cl" >
      <div id="c10">
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML CLASS ATTRIBUTE</div>
         <div class="card-deck">
@@ -434,7 +434,7 @@
     </section>
     <hr size="1" width="100%" color="black">
      <!--11th-->
-     <section id="i">
+     <section class="i">
      <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML ID ATTRIBUTE</div>
         <div class="card-deck">
@@ -468,7 +468,7 @@
     </section>
     <hr size="1" width="100%" color="black">
      <!--12th-->
-     <section id="forms">
+     <section class="forms">
      <div >
       <div class="card " style="width:200px;margin-left: 40%;margin-top: 10px;background-color: rgba(112,207,166);padding: 10px;">HTML FORMS</div>
         <div class="card-deck">
@@ -508,7 +508,7 @@ Example:
 </section>
 
 <hr size="1" width="100%" color="black">
-  <div id="c13">
+  <div class="c13">
     <div class="card " style="width:200px;margin-left: 40%;margin-top: 20px;margin-bottom:10px;background-color: rgba(112,207,166);padding: 10px;">HTML ELEMENTS</div>
     <table>
         <tr>

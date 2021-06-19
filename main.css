@@ -278,6 +278,12 @@ header {
 #h1{
     display:none
 }
+#commentbox{
+    background-color: rgb(183, 223, 247);
+    width:900px;margin-left:30px;
+    border-radius: 50px 0px 0px 0px;
+    padding: 25px;
+}
 
 
 /*--------------------------------------------dropdown-----------------------------*/
@@ -406,6 +412,11 @@ header {
   #h1{
       display:block;
   }
+  #commentbox{
+      width:430px;
+      margin-left: 10px;
+  }
+
   
 
   
@@ -481,6 +492,7 @@ nav ul li{
   #resp{
       width:400px;
   }
+  
   }
 
 
