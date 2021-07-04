@@ -104,7 +104,7 @@ ul{
     background-color: #F8F8F8;
     width:900px;
     border-radius: 50px;
-    margin-left: 40px;
+    margin-left: 70px;
 
 }
 #resp{
@@ -133,6 +133,7 @@ header {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     color:#ffffff;
+    position:fixed;
 
 }
 #nav{
@@ -200,6 +201,8 @@ header {
 .topnav {
     background-color:black;
     overflow: hidden;
+
+    
   }
   
   /*------------------------------------------------ Style the links inside the navigation bar-------------------------------------------- */
@@ -211,6 +214,7 @@ header {
     text-decoration: none;
     font-size: 17px;
     font-family:'Poppins', sans-serif;
+    
   }
   
   /*------------------------------------------------------ Change the color of links on hover ---------------------------------------------*/
@@ -224,6 +228,10 @@ header {
     background-color:red;
     color: white;
   }
+  .wrapper .sidebar ul li a.active{
+    background-color:red;
+    color: white;
+  }
 .banner-text{
     text-align: center;
     color: white;
@@ -233,7 +241,8 @@ header {
     
 }
 .banner-text h1{
-     font-size: 120px;
+
+     font-size: 20px;
 }
 .banner-text p{
     font-size: 20px;
@@ -323,6 +332,43 @@ header {
     text-decoration: none;
 }
 
+.wrapper{
+    display:flex;
+position: relative;
+}
+
+.wrapper .sidebar{
+width: 60px;
+height: 265px;
+background: #24262b;
+position: fixed;
+margin-top: 100px;
+}
+
+
+
+
+
+.wrapper .sidebar ul li a{
+color: white;
+display: block;
+padding-right:0px ;
+margin-left:-30px ;
+text-decoration: none;
+padding:10px;
+
+
+}
+
+
+
+
+.wrapper .sidebar ul li:hover a{
+color: white;
+background-color:red;
+}
+
+
 
 
 
@@ -411,11 +457,16 @@ header {
   }
   #h1{
       display:block;
+      position: relative;
+      margin-top: 0px;
   }
-  #commentbox{
-      width:430px;
-      margin-left: 10px;
-  }
+
+
+  .wrapper{
+    display:none;
+}
+
+
 
   
 
@@ -471,6 +522,9 @@ nav ul li{
     width: 20px;
     margin-top: 15px;
 
+}
+#back #nav{
+    font-size: 20px;
 }
 
 

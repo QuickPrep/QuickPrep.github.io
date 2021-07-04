@@ -11,6 +11,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body  >
         <header id="h1">
@@ -21,7 +32,19 @@
                      <ul>
                          <li> <a href="index.html">HOME</a></li>
                          <li> <a href="main1.html">C</a></li>
-                            <li><a id="dd" href="main1.html">1. C Snippets</a></li>
+                         <li> <div class="dropdown">
+                            <button class="btn text-white dropdown-toggle" type="button" data-toggle="dropdown">C Snippets
+                            </button>
+                            <ul class="dropdown-menu" style="background-color: #31cbbb;">
+                              <li><a href="main1.html">Set-1</a></li>
+                              <li><a href="main2.html">Set-2</a></li>
+                              <li><a href="main3.html">Set-3</a></li>
+                              <li><a href="main4.html">Set-4</a></li>
+                              <li><a href="main5.html">Set-5</a></li>
+                            </ul>
+                          </div>
+                        </li>
+
                             <li><a id="dd" href="#">2. C Basics</a></li>
                          <li> <a href="#">Java</a></li>
                          <li> <a href="#">Python</a></li>
@@ -72,10 +95,25 @@
                 <a href="blog1.html">Blogs</a>
                 <a href="contact.html">Contact us.</a>
               </div>
+
+              
+              <div class="wrapper">
+                <div class="sidebar">
+                    
+                    <ul>
+                        <li><a href="main1.html">Set-1</a></li>
+                        <li><a href="main2.html">Set-2</a></li>
+                        <li><a class="active" href="main3.html">Set-3</a></li>
+                        <li><a href="main4.html">Set-4</a></li>
+                        <li><a href="main5.html">Set-5</a></li>
+                        
+                    </ul> 
+                   
+                </div>
+                </div>
             
         <br>
         <div id="back">
-        <h5 id="nav"><a href="main1.html">Set 1     |</a><a href="main2.html"> Set 2    |</a><a href="main3.html"> Set 3   |</a><a href="main4.html"> Set 4</a></h5>
            <h4 id="nav">C Snippets | Guess the output! | Set 3 </h4>
         <div >
             <div id="resp" >
@@ -491,126 +529,6 @@ d)typedef</pre>
 </div>
 
 
-<div class="container-fluid my-4" id="commentbox">
-    <h3 class="text-center bg-light text-dark" style="font-family: 'poppins',sans-serif;font-size: 20px;border-radius: 5px;height:32px;width:300px;">Comment your reviews</h3>
- 
-    <div class="form-group">
-        <label for="title">Name</label>
-        <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
-       
-    </div>
-    <br>
-    <div class="form-group">
-        <label for="description">Comment</label>
-        <textarea class="form-control" id="description" rows="3"></textarea>
-    </div>
-    <br>
-
-    <button   id="add" class="btn btn-primary">Submit</button>
-   
- 
-
-<div id="items" class="my-4">
-    <h2>Comments</h2>
-    <table class="table">
-        <thead>
-          <tr>
-           
-            <th scope="col">Name</th>
-            <th scope="col">Comments</th> 
-            
-          </tr>
-        </thead>
-        <tbody id="tableBody">
-          <tr>
-           
-            <td></td>
-            <td></td> 
-            <!--<td><button class="btn btn-sm btn-primary">Delete</button></td>-->
-          </tr>
-          
-        </tbody>
-      </table>
-</div>
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-crossorigin="anonymous"></script>
-<script>
-
-
-
-    function getAndUpdate(){
-        console.log("Updating List...");
-        tit = document.getElementById('title').value;
-        desc = document.getElementById('description').value;
-        if (localStorage.getItem('itemsJson')==null){
-            itemJsonArray = [];
-            itemJsonArray.push([tit, desc]);
-            localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-        }
-        else{
-            itemJsonArrayStr = localStorage.getItem('itemsJson')
-            itemJsonArray = JSON.parse(itemJsonArrayStr);
-            itemJsonArray.push([tit, desc]);
-            localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-        }
-        update();
-    }
-
-    function update(){
-        if (localStorage.getItem('itemsJson')==null){
-            itemJsonArray = []; 
-            localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
-        } 
-        else{
-            itemJsonArrayStr = localStorage.getItem('itemsJson')
-            itemJsonArray = JSON.parse(itemJsonArrayStr); 
-        }
-        // Populate the table
-        let tableBody = document.getElementById("tableBody");
-        let str = "";
-        itemJsonArray.forEach((element, index) => {
-            str += `
-            <tr>
-           
-            <td>${element[0]}</td>
-            <td>${element[1]}</td> 
-            </tr>`; 
-        });
-        tableBody.innerHTML = str;
-    }
-    add = document.getElementById("add");
-    add.addEventListener("click", getAndUpdate);
-    update();
-    function deleted(itemIndex){
-        console.log("Delete", itemIndex);
-        itemJsonArrayStr = localStorage.getItem('itemsJson')
-        itemJsonArray = JSON.parse(itemJsonArrayStr);
-        // Delete itemIndex element from the array
-        itemJsonArray.splice(itemIndex, 1);
-        localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray));
-        update();
-
-    }
-    function clearStorage(){
-        if (confirm("Do you areally want to clear?")){
-        console.log('Clearing the storage')
-        localStorage.clear();
-        update()
-        }
-    }
-</script>
-
-<!--Add the below line to line number 651 if u want to delete the record-->
-<!-- <td><button class="btn btn-sm btn-primary" onclick="deleted(${index})">Delete</button></td>-->
 
 
 
