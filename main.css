@@ -58,7 +58,7 @@ ul{
     animation-delay: 1s;
 }
 .bubbles img:nth-child(3){
-    animation-delay: 3s;
+    animation-delay: s;
 }
 .bubbles img:nth-child(4){
     animation-delay: 4.5s;
@@ -226,7 +226,7 @@ header {
     padding: 0;
 }
 #banner{
-    background: linear-gradient(rgba(0,0,0,0.5),#009688), url(bg.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),#4ac2f1), url(bg.jpg);
     background-size: cover;
     background-position:center;
     height: 100vh;
@@ -486,7 +486,7 @@ background-color:red;
       background-position:center;
       height: 100vh;
       background-size: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.5),#009688), url(logo2.png);
+      background: linear-gradient(rgba(0,0,0,0.5),#4ac2f1), url(logo2.png);
       background-repeat: no-repeat;
       background-position: 20%;
     
