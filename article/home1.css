@@ -15,11 +15,16 @@ body{
     height:50px;
     box-shadow:1px 1px 5px black;
     text-align: center;
+    
  }
 
  .card{
      border-radius: 10px;
      border:1px solid white;
+     padding: 30px;
+     
+     
+     
     ;
  }
  p{

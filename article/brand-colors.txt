@@ -1,0 +1,4 @@
+1.Yellow : #f6d813
+2.Blue : #001d7a
+3.Light Green : #4fbb7c
+4.Dark Green : #198754
