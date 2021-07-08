@@ -37,6 +37,12 @@ body{
      margin-left: 30%;
  }
 
+ .big::first-letter{
+    font-size: 200%;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+ }
  @media(max-width:1000px)
  {
     .cr{
