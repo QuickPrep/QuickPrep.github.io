@@ -1,0 +1,51 @@
+body{
+    margin:0px;
+    background-color:#f6d813;
+    background-color: #4fbb7c;
+  
+ }
+
+ .cr {
+     padding:40px;
+     width:70%;
+   
+ }
+
+ .card{
+     border-radius: 10px;
+     border:1px solid white;
+    ;
+ }
+ p{
+     font-size: 20px;
+ }
+
+ ul li {
+     font-size: 20px;
+ }
+  
+ .src{
+     margin-left: 30%;
+ }
+
+ @media only screen and (max-width:660px)
+ {
+   .cr{
+       width:95%;
+   }
+   p{
+       font-size:35px;
+   }
+   ul li {
+    font-size: 35px;
+}
+   #nav{
+       width:100%;
+   }
+   #nav h4{
+       font-size: 30px;
+   }
+   body{
+       background-color: black;
+   }
+ }
