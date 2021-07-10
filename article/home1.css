@@ -16,6 +16,7 @@ body{
     box-shadow:1px 1px 5px black;
     text-align: center;
     
+    
  }
 
  .card{
@@ -62,10 +63,10 @@ body{
     }
     #nav{
         height:70px;
-        width:1000px;
+        width:100%;
     }
     #nav h4{
-        font-size: 40px;
+        font-size: 60px;
     }
     
     h1{
