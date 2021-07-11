@@ -24,7 +24,7 @@ body::before{
     width:100%;
     height:100%;
     background: linear-gradient(#f00,#f0f);
-    clip-path:circle(30% at right 70%);
+    clip-path:circle(20% at right 80%);
 }
 body::after{
     content:'';
@@ -62,14 +62,32 @@ body::after{
     backdrop-filter: blur(2px);
 
 }
+
+.container .card .content .imgBx
+{
+    position:relative;
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    overflow:hidden;
+    border:10px solid rgba(0,0,0,0.25);
+
+}
+.container .card .content .imgBx img {
+    position : absolute;
+    top:0;
+    left:0;
+    width:100%;
+    object-fit:cover;
+}
 .content
 {
     color:white;
     padding:20px;
     text-align: center;
     transition: 0.5s;
-    transform:translateY(100px);
-    opacity:0;
+   
+    opacity:0.3;
 }
 .content a{
     text-decoration: none;
@@ -80,12 +98,42 @@ body::after{
     
 }
 .container .card:hover .content{
-    transform:translateY(0px);
+    transform:translateY(-25px);
     opacity:1;
 }
 .content h3{
-    font-size:1.8rem;
+    font-size:16px;
 }
+.container .card .sci 
+{
+    position : absolute;
+    bottom:50px;
+    display:flex;
+    margin-right: 45px;
+}
+.container .card .sci  li {
+    list-style:none;
+    margin:0 10px;
+    transform : translateY(40px);
+    transition: 0.5s;
+    opacity:0;
+    transition-delay: calc(0.1s * var(--i));
+}
+.container .card:hover .sci li 
+{
+    transform:translateY(0px);
+    opacity: 1;
+
+} 
+.container .card .sci li a {
+    color : #fff;
+    font-size: 24px;
+}
+.contentBx span {
+    font-size: 15px;
+    
+}
+
 
 
 
