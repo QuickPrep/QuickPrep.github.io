@@ -1,0 +1,175 @@
+<html>
+    <head>
+    <title>Article</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="array.css" class="rel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+  
+        <div id="nav">
+            <h4 style="padding:10px;color: white;">Shreeshantha IT Solutions.</h4>
+        </div>
+    
+        <div class="cr">
+            <div class="card">
+                <div class="card-body">
+                    <h1 style="font-family: 'EB Garamond', serif;
+                    font-family: 'Poppins', sans-serif;" ><strong>Array methods in JavaScript</strong></h1><br>
+                    <p style="margin-top: -30px;color:#919191">Difficulty Level : Easy</p>
+                    <p>Array methods help you to work with the arrays.Find below them in detail.</p>
+                    <hr color="#f2f2f2">
+                    <h3>The join() Method</h3><br>
+                    <p>The join() method is used to join all array elements into a string by a separator.</p>
+                    <p>We can the specify the separator as shown below.</p>
+
+                            <div class="card1">
+                                <div class="content">
+                                    <div class="contentBx">
+                                        <br>
+                                        <code style="font-size: 18px;color:white">
+                                            const lang=[“Html”,”Css”,”Js”];<br>
+                                            lang.join(“ * “);<br>
+                                        </code>
+                                        <code style="font-size: 18px;color:white;--i:1" id="op">//returns    Html*Css*Js</code>
+                                    
+                                    </div>
+                                </div>
+                            </div> 
+                            <br> <hr color="#f2f2f2">
+
+                                <!---End of 1st Method-->
+
+                                <h3>The shift() Method</h3><br>
+                                <p>Shifting is equivalent to popping, working on the first element instead of the last.</p>
+
+                                <p>The shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+
+
+                            <div class="card1">
+                                <div class="content">
+                                    <div class="contentBx">
+                                        <br>
+                                        <code style="font-size: 18px;color:white">
+                                            const lang=[“Html”,”Css”,”Js”];<br>
+                                            lang.shift(); <br>
+                                            
+                                        </code>
+
+                                        <code style="font-size: 18px;color:white;--i:1" id="op"> // returns Css,Js. </code>
+                                    </div>
+                                </div>
+                            </div> 
+                            <br> <hr color="#f2f2f2">
+
+                            <!---End of 2nd Method-->
+
+                            <h3>The unshift() Method</h3><br>
+                            <p>The unshift() method adds a new element to an array at the beginning, and "unshifts" older elements:</p>
+                                
+
+                        <div class="card1">
+                            <div class="content">
+                                <div class="contentBx">
+                                    <br>
+                                    <code style="font-size: 18px;color:white">
+                                        const lang=[“Html”,”Css”,”Js”];<br>
+                                        lang.unshift(“php” );<br>
+                                        
+                                    </code>
+
+                                    <code style="font-size: 18px;color:white;" id="op">//returns returns php,Html,Css,Js</code>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <br> <hr color="#f2f2f2">
+
+                        <!---End of 3rd Method-->
+
+                        <h3>The delete() method</h3><br>
+                        <p>The delete() method is used to delete the specific element from an array amd make it undefined</p>
+
+
+                        <div class="card1">
+                            <div class="content">
+                                <div class="contentBx">
+                                    <br>
+                                    <code style="font-size: 18px;color:white">
+                                        const lang=[“php”,“Html”,”Css”,”Js”];<br>
+                                        delete lang[0]; <br>
+
+                                    </code>
+
+                                    <code style="font-size: 18px;color:white;--i:1" id="op">//deletes "php" from an array and make it undefined</code>
+                                </div>
+                            </div>
+                        </div> 
+                        
+
+                        <br> <hr color="#f2f2f2">
+
+                            <!---End of 4th Method-->
+
+                            <h3>The splice() method</h3><br>
+                            <p>The splice() method is used to add new items to an array:</p>
+                            <p>The first parameter defines the position where new elements should be added (spliced in).</p>
+                            <p>The second parameter defines how many elements should be removed.</p>
+                            <p>The rest of the parameters define the new elements to be added.</p>
+                            
+
+                        <div class="card1">
+                            <div class="content">
+                                <div class="contentBx">
+                                    <br>
+                                    <code style="font-size: 18px;color:white">
+                                        const lang=[“php”,“Html”,”Css”,”Js”];<br>
+                                        lang.splice(2, 0, "java", "angular");<br>
+                                        
+                                    </code>
+
+                                    <code style="font-size: 18px;color:white;" id="op">//returns php,Html,Java,angular,Css,Js</code>
+                                </div>
+                            </div>
+                        </div> 
+                        <br> <hr color="#f2f2f2">
+
+                        <!---End of 5th Method-->
+
+                        <h3>The slice() method</h3><br>
+                        <p>The slice() method creates a new array. It does not remove any elements from the source array</p>
+                        
+                    
+                        <div class="card1">
+                            <div class="content">
+                                <div class="contentBx">
+                                    <br>
+                                    <code style="font-size: 18px;color:white">
+                                        const lang1 = ["Html", "Css", "Js", "php", "angular"];<br>
+                                        const lang2 = lang1.slice(1);<br>
+                                        console.log(lang2);<br>
+                                        
+                                    </code>
+
+                                    <code style="font-size: 18px;color:white;" id="op">//returns Css,Js,php,angular</code>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        
+                    </div>
+                
+                    
+            </div>
+            
+            
+        </div>
+        <div id="nav">
+            <h5 style="padding:10px;color: white;">Shreeshantha IT Solutions Pvt Ltd.</h5>
+        </div>
+    </body>
+</html>

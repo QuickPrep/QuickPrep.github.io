@@ -1,0 +1,249 @@
+<html>
+    <head>
+    <title>Article</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="art2.css" class="rel">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+  
+  <div id="nav">
+      <h4 style="padding:10px;color: white;">Shreeshantha IT Solutions.</h4>
+  </div>
+  
+<div class="cr">
+  <div class="card">
+      <div class="card-body">
+          <h1 style="font-family: 'EB Garamond', serif;
+          font-family: 'Poppins', sans-serif;" ><strong>String methods in JavaScript</strong></h1><br>
+          <p style="margin-top: -30px;color:#919191">Difficulty Level : Easy</p>
+          <p>String methods help you to work with the strings.Find below them in detail.</p>
+          <hr color="#f2f2f2">
+          <h3>The slice() Method</h3><br>
+          <p>slice() extracts a part of a string and returns the extracted part in a new string.</p>
+
+          <p>The method takes 2 parameters: the start position, and the end position (end is not included).</p>
+           
+          <p>The slice() method also accepts negative value, where -1 represents the last index</p>
+            
+          <p>This below example slices out a portion of a string from position 5 to position 11 (12-1):</p>
+
+        <div class="card1">
+            <div class="content">
+                <div class="contentBx">
+                    <br>
+                    <code style="font-size: 18px;color:white">
+                    let str = "Shreeshantha IT Solutions";<br>
+                    str.slice(5, 12);<br>
+
+                    </code>
+
+                    <code style="font-size: 18px;color:white;--i:1" id="op">//returns shantha</code>
+                
+                </div>
+            </div>
+        </div> 
+        <br> <hr color="#f2f2f2">
+
+            <!---End of 1st Method-->
+
+            <h3>The replace() Method</h3><br>
+          <p>The replace() method replaces a specified value with another value in a string:</p>
+
+          <p>The replace() method does not change the string it is called on. It returns a new string.</p>
+           
+          <p>By default, the replace() method replaces only the first match and it is case sensitive</p>
+            
+
+        <div class="card1">
+            <div class="content">
+                <div class="contentBx">
+                    <br>
+                    <code style="font-size: 18px;color:white">
+                    let str = "Shreeshantha it Solutions";<br>
+                    str.replace("it", "IT");<br>
+
+                    </code>
+
+                    <code style="font-size: 18px;color:white;--i:1" id="op">//returns Shreeshantha IT Solutions</code>
+                </div>
+            </div>
+        </div> 
+        <br> <hr color="#f2f2f2">
+
+         <!---End of 2nd Method-->
+
+         <h3>The trim() Method</h3><br>
+         <p>The trim() method removes whitespace from both sides of a string:</p>
+
+          
+           
+
+       <div class="card1">
+           <div class="content">
+               <div class="contentBx">
+                   <br>
+                   <code style="font-size: 18px;color:white">
+                   let str = " <code style="color:white;font-size: 18px;margin-left: 30px;margin-right: 30px;">Shreeshantha IT Solutions</code>     ";<br>
+                   str.trim();<br>
+
+                   </code>
+
+                   <code style="font-size: 18px;color:white;" id="op">//returns Shreeshantha IT Solutions</code>
+               </div>
+           </div>
+       </div> 
+
+       <br> <hr color="#f2f2f2">
+
+       <!---End of 3rd Method-->
+
+       <h3>The padStart() and padEnd() Method</h3><br>
+       <p>The padStart()and padEnd() method support padding at the beginning and at the end of a string</p>
+
+        
+         
+
+     <div class="card1">
+         <div class="content">
+             <div class="contentBx">
+                 <br>
+                 <code style="font-size: 18px;color:white">
+                 let str = "6";<br>
+                 str.padStart(4,0);<br>
+
+                 </code>
+
+                 <code style="font-size: 18px;color:white;--i:1" id="op">//returns 0006</code>
+             </div>
+         </div>
+     </div> 
+     <br>
+     <div class="card1">
+        <div class="content">
+            <div class="contentBx">
+                <br>
+                <code style="font-size: 18px;color:white">
+                let str = "6";<br>
+                str.padEnd(4,0);<br>
+
+                </code>
+
+                <code style="font-size: 18px;color:white;--i:1" id="op">//returns 6000</code>
+            </div>
+        </div>
+    </div> 
+
+  <br> <hr color="#f2f2f2">
+
+    <!---End of 2nd Method-->
+
+    <h3>The charAt() Method</h3><br>
+    <p>The charAt() method returns the character at a specified index (position) in a string:</p>
+
+     
+      
+
+  <div class="card1">
+      <div class="content">
+          <div class="contentBx">
+              <br>
+              <code style="font-size: 18px;color:white">
+              let str = "Shreeshantha IT Solutions";<br>
+              str.charAt(0);<br>
+
+              </code>
+
+              <code style="font-size: 18px;color:white;" id="op">//returns S</code>
+          </div>
+      </div>
+  </div> 
+  <br> <hr color="#f2f2f2">
+
+  <!---End of 2nd Method-->
+
+  <h3>The charCodeAt() Method</h3><br>
+  <p>The charCodeAt() method returns the unicode of the character at a specified index in a string</p>
+
+   
+    
+
+<div class="card1">
+    <div class="content">
+        <div class="contentBx">
+            <br>
+            <code style="font-size: 18px;color:white">
+            let str = "Shreeshantha IT Solutions";<br>
+            str.charCodeAt(0) ;<br>
+
+            </code>
+
+            <code style="font-size: 18px;color:white;" id="op">//returns 83</code>
+        </div>
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+        </div>
+
+
+
+
+
+
+            
+            
+           
+              
+        
+      </div>
+    
+      
+  </div>
+
+   </div>
+   
+  </body>
+  </html>
