@@ -23,6 +23,8 @@ ul{
 	list-style: none;
 }
 
+/*-----------------------------------------------Animation Bubbles------------------------------------------------------------*/
+
 .bubbles img{
     width:50px;
     animation: bubble 7s linear infinite;
@@ -47,7 +49,7 @@ ul{
         opacity: 1;
     }
     100%{
-        transform: translateY(-80vh);
+        transform: translateY(-95vh);
         opacity: 0;
     }
 }
@@ -58,7 +60,7 @@ ul{
     animation-delay: 1s;
 }
 .bubbles img:nth-child(3){
-    animation-delay: s;
+    animation-delay: 4s;
 }
 .bubbles img:nth-child(4){
     animation-delay: 4.5s;
@@ -185,6 +187,8 @@ header {
     margin-left: 50px;
     
 }
+
+/**/
 
 /*----------------------------------------------------Whatsapp--------------------------------------------------*/
 .whatsapp_float {
