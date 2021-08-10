@@ -9,6 +9,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+         
         <style>
             body{
                 background-color: #f2f2f2;
@@ -30,6 +42,40 @@
                 color: #f2f2f2;
                 font-family:'Poppins', sans-serif;;
             }
+            .card{
+                width:18rem;
+                margin-left: 400px;
+                text-align: center;
+                box-shadow:0 1rem 2.1rem -0.7rem black;
+            }
+            .card-body{
+                padding:20px;
+                text-align: center;
+                
+                
+            }
+            .card-body a{
+                opacity:1;
+                bottom:-50px;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .card-body:hover a{
+                opacity:1;
+                transition:0.1s;
+                transform: translateY(-5px);
+            }
+            .card:hover{
+                box-shadow:0 1rem 2.1rem -0.7rem black;
+            }
+            .card-body:hover img{
+                transform: translateY(-5px);
+                transition:0.5s;
+            }
+            .card-body a{
+                text-decoration: none;
+                color:white;
+            }
             @media(max-width: 770px){
                 .contact{
                     width:390px;
@@ -37,6 +83,10 @@
                 }
                 #con{
                     margin-left: 35px;
+                }
+                .card{
+                width:18rem;
+                margin-left: 60px;
                 }
             }
            
@@ -100,37 +150,27 @@
             </div>
             <a href="#">Java</a>
             <a href="#">Python</a>
-            <a href="tcs.html">TCS prep</a>
+            <a class="active" href="tcs.html">TCS prep</a>
             <a href="blog1.html">Blogs</a>
-            <a class="active" href="contact.html">Contact us.</a>
+            <a  href="contact.html">Contact us.</a>
             <a href="about.html">About Us</a>
 
           </div>
           <img id="log" src="logo2.png" class="logo">
-            <br>
-            <br>
-            <br>
-            <div id="con">
-        <div class="contact">
-                <h1>Contact Us!</h1>
-                <br>
-                <h3>
-                <p> 
-<pre style="font-family: 'Montserrat', sans-serif;">Hello,Feel free to drop a WhatsApp
-message if you find anything
-wrong,or if u want to contribute 
-your data to us.We will respond 
-as early as possible.
-                        </pre>
-                        
-                    </p>
-                    <a id="wat" href="https://api.whatsapp.com/send?phone=918861144715&amp;text=Hai%20Team%20QuickPrep!!"  target="_blank"><i class="fa fa-whatsapp whatsapp-icon">Whatsapp Us</i></a>
-                   
-                   
 
-       </div>
-       </div>
-       <br><br>
+          <div class="container">
+              <div class="card bg-danger text-light mt-5 mb-5">
+                  <div class="card-header">
+                    <h2>TCS Coding Questions</h2>
+                  </div>
+                  <div class="card-body bg-dark">
+                      <img src="images.jpg" class="rounded-circle" alt=""><br><br>
+                          <a href="https://drive.google.com/drive/folders/1dm4RdjYMjT3xwKsyDKFM9iOLakNrWnvF?usp=sharing" class="btn btn-danger">Start Preparing </a>
+                      </a>
+                  </div>
+              </div>
+          </div>
+           
        <footer class="footer">
         <div class="container">
             <div class="row1">
@@ -163,6 +203,8 @@ as early as possible.
         </div>
         </footer>
         
+        <a href="https://api.whatsapp.com/send?phone=919008297113&amp;text=Hai%20Team%20QuickPrep!!I%20Found%20your%20Website%20Interesting%20" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
     
     </body>
 </html>
