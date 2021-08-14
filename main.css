@@ -269,6 +269,7 @@ header {
   
   /*------------------------------------------------------ Change the color of links on hover ---------------------------------------------*/
   .topnav a:hover {
+    /* background-color: 	#5bc0de; */
     background-color: red;
     color: white ;
     text-decoration: none;
@@ -276,11 +277,13 @@ header {
   
   /* -------------------------------------------------------Add a color to the active/current link------------------------------------------ */
   .topnav a.active {
-    background-color:red;
+    /* background-color:	#5bc0de; */
+    background-color: red;
     color: white;
   }
   .wrapper .sidebar ul li a.active{
-    background-color:red;
+    /* background-color:	#5bc0de; */
+    background-color: red;
     color: white;
   }
 .banner-text{
@@ -478,7 +481,7 @@ background-color:red;
   }
   #ind{
       margin-top: 60px;
-      font-size: 55px;
+      font-size: 70px;
       
   }
   #ind1{
