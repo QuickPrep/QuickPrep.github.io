@@ -183,6 +183,7 @@ span{
 .inst:hover .imgbox
 {
    transform: rotateY(-180deg); 
+   opacity: 1;
 }
 
 .inst .imgbox img{
@@ -242,57 +243,55 @@ span{
 /* ------------------------------------------------------------------------------- */
 
 
-            @media(max-width: 770px){
-                .contact{
-                    width:390px;
-                    padding: 40px;
-                }
-                #con{
-                    margin-left: 35px;
-                }
-                .card{
-                width:18rem;
-                margin-left: 60px;
-                }
-                .flex{
-                    display: block;
-                    
-                }
-                .container .card{
-                position:relative;
-                width:320px;
-                height:450px;
-                background:#232323;
-                border-radius: 20px;
-                overflow:hidden;
-                margin-left: 50px;
-                }
-                .head{
-                    padding:10px;
-                }
-                .inst{
-                    position: relative;
-                    width:120%;
-                    height:700px;
-                    margin-left: 20px;
-                }
-                #p{
-                    font-size: 15px;
-                }
+@media(max-width: 770px){
+    .contact{
+        width:390px;
+        padding: 40px;
+}
+    #con{
+        margin-left: 35px;
+    }
+    .card{
+    width:18rem;
+    margin-left: 60px;
+    }
+    .flex{
+        display: block;
+        
+    }
+    .container .card{
+    position:relative;
+    width:320px;
+    height:450px;
+    background:#232323;
+    border-radius: 20px;
+    overflow:hidden;
+    margin-left: 50px;
+    }
+    .head{
+        padding:10px;
+    }
+    .inst{
+        position: relative;
+        width:120%;
+        height:700px;
+        margin-left: 20px;
+    }
+    #p{
+        font-size: 15px;
+    }
                
                    
-                .inst:hover{
-                    transform: translateY(0%);
+.inst:hover{
+    transform: translateY(0%);
 }
-                }
-                .inst:hover .imgbox{
-                    opacity: 0; 
-                     
-                    
-                    
-                } 
-                .inst .imgbox img:nth-child(2){
-                    display: block;
+
+.inst:hover .imgbox{
+    opacity:0;
+}
+ 
+.inst .imgbox img:nth-child(2){
+    display: block;
 }
             }
            
