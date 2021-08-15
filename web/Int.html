@@ -147,7 +147,99 @@ span{
 .head{
     padding:20px;
 }
+.inst{
+    position: relative;
+    width:600px;
+    height:700px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(150, 137, 137, 0.25);
+    transition: 1s;
+    margin-left: 500px;
+    border-radius: 20px;
+}
 
+.inst:hover
+{
+    transform: translateX(50%);
+}
+
+.inst .imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin:left;
+    transform-style: preserve-3d;
+    background: #000;
+    transition: 1s;
+    box-shadow: 10px 20px 40px rgba(150, 137, 137, 0.25);
+    border-radius: 20px;
+   
+
+}
+
+.inst:hover .imgbox
+{
+   transform: rotateY(-180deg); 
+}
+
+.inst .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden ;
+    border-radius: 20px;
+}
+
+.inst .imgbox img:nth-child(2){
+    transform: rotateY(180deg); 
+}
+
+.inst .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inst .details .content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inst .details .content h2
+{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.inst .details .content h2 span
+{
+    color: red;
+    font-size: 0.8em;
+}
+#p{
+    font-size:19px;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
 
 
             @media(max-width: 770px){
@@ -174,10 +266,41 @@ span{
                 border-radius: 20px;
                 overflow:hidden;
                 margin-left: 50px;
-}
+                }
                 .head{
                     padding:10px;
-                    }
+                }
+                .inst{
+                    position: relative;
+                    width:120%;
+                    height:700px;
+                    margin-left: 20px;
+                }
+                #p{
+                    font-size: 15px;
+                }
+                .inst .imgbox img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit:cover;
+                    transform-style: preserve-3d;
+                    backface-visibility: hidden ;
+                    border-radius: 20px;
+                    
+                   
+}   
+                /* .inst:hover .imgbox{
+                    /* opacity: 0; 
+                    transform: rotateY(0deg); 
+                    
+                    
+                } */
+                .inst .imgbox img:nth-child(2){
+                    display: block;
+}
             }
            
                         
@@ -321,6 +444,41 @@ span{
         </div>
     </div>
 </div>
+</div>
+
+
+
+<div class="card inst mt-5 mb-5">
+    <div class="imgbox">
+        <img src="../images/S1.png" alt="">
+        <img src="../images/S1.png" alt="">
+      
+        <!-- <img src="back.jpg" alt=""> -->
+       
+    </div>
+    <div class="details">
+        <div class="content">
+            <!-- <h2>Some Fomous<br><span>Graphic Desinger</span></h2> -->
+            <p id="p">
+                <b>Hello Sir/Madam,</b>
+              <br><br>
+                I am <span style="font-weight: 600;color:black">John Doe</span> , i would like to tell one <span style="font-weight: 600;color:black"">good quality</span> i possess ,that  i have pretty good <span style="font-weight: 600;color:black"">patience.</span>The reason why i believe that's a good quality is because,It is important to be patient and keep going to reach our goals.
+                <!-- It is important to be patient and keep going to reach our goals. Once we learn the importance of patience, we can stop worrying when things take longer than we would like. ... Patience makes it easier to live because it reduces negative emotions like stress. -->
+                <br><br>
+                
+                I would like to become a leading <span style="font-weight: 600;color:black"">Programmer</span> who solves real world problems.
+                Any Programmer can write software but the one who writes <span style="font-weight: 600;color:black"">efficiently</span> would stand out of the crowd is what i believe and i wish to be part of it.
+                <br><br>                
+                
+                The reason why i got into this field of study is that i have been watching the <span style="font-weight: 600;color:black"">Technology</span> that's evolving , and i used to be very much curious on how those programmatically works and how they have made lives easy ; which actually <span style="font-weight: 600;color:black">inspired</span> me to get into this .
+                <br><br>
+                Ultimately i have been learning <span style="font-weight: 600;color:black">programming languages</span> since 2 years such as C Java and PHP and Front end technologies like HTML,CSS,Javascript. And it would be great if i become a part of this organization to utilize my <span style="font-weight: 600;color:black">skillset</span> for the growth of the organization.</p>
+           
+
+            </div>
+           
+        </div>
+    </div>
 </div>
 <!-- Actual Content -->
 
