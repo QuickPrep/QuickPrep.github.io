@@ -25,6 +25,9 @@
             #sidenav{
                 display: none;
             }
+            body{
+                overflow: hidden;
+            }
             
         }
 
@@ -57,13 +60,13 @@
                 <a  href="contact.html">Contact us</a>
                 <a  href="about.html">About Us</a>
               </div>
-            <img id="log" src="logo2.png" class="logo">
+            <img id="log" src="images/logo2.png" class="logo">
             <div class="banner-text">
                 <div class="bubbles">
-                    <img src="bubble.png">
-                    <img src="bubble.png">
-                    <img src="bubble.png">
-                    <img src="bubble.png">
+                    <img src="images/bubble.png">
+                    <img src="images/bubble.png">
+                    <img src="images/bubble.png">
+                    <img src="images/bubble.png">
                     <img id="last" src="bubble.png">
                     
     
@@ -71,7 +74,7 @@
     
                     </div>  
                 <h1 style="font-family: 'Cormorant Garamond', serif;" id="ind">Quick Prep</h1><br><br><br><br><br><br><br><br>
-                <p style="font-family: 'Courier New', Courier, monospace;">Make it Quick</p>
+                <!-- <p style="font-family: 'Courier New', Courier, monospace;">Make it Quick</p> -->
             </div>
             
         </section>
@@ -106,7 +109,7 @@
             </div>
         
             <div id="menuBtn">
-                <img src="menu.png" id="menu">
+                <img src="images/menu.png" id="menu">
             </div>
             <script>
                 var menuBtn = document.getElementById("menuBtn")
@@ -118,7 +121,7 @@
                 menuBtn.onclick =function(){
                     if(sidenav.style.right == "-250px"){
                         sidenav.style.right ="0";
-                        menu.src ="close.png";
+                        menu.src ="images/close.png";
                     }
                     else{
                         sidenav.style.right="-250px";

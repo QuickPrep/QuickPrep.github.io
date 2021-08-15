@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 body{
 	line-height: 1.5;
-	font-family:'Poppins', sans-serif;;
+	font-family:'Poppins', sans-serif;
+    
 }
 *{
 	margin:0;
@@ -22,7 +23,9 @@ body{
 ul{
 	list-style: none;
 }
-
+#ind{
+    margin-top: 350px;
+}
 /*-----------------------------------------------Animation Bubbles------------------------------------------------------------*/
 
 .bubbles img{
@@ -230,10 +233,11 @@ header {
     padding: 0;
 }
 #banner{
-    background: linear-gradient(rgba(0,0,0,0.5),#4ac2f1), url(bg.jpg);
+    background: linear-gradient(rgba(0,0,0,0.5),#4ac2f1), url(images/bg1.jpg);
     background-size: cover;
     background-position:center;
     height: 100vh;
+    
 }
 .logo{
     width:40px;
@@ -480,8 +484,8 @@ background-color:red;
       font-size: 20px;
   }
   #ind{
-      margin-top: 60px;
-      font-size: 70px;
+      margin-top: 30px;
+      font-size: 60px;
       
   }
   #ind1{
@@ -493,7 +497,7 @@ background-color:red;
       background-position:center;
       height: 100vh;
       background-size: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.5),#4ac2f1), url(logo2.png);
+      background: linear-gradient(rgba(0,0,0,0.5),#4ac2f1), url(images/logo2.png);
       background-repeat: no-repeat;
       background-position: 20%;
     
