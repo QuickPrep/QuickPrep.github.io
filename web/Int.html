@@ -1,0 +1,366 @@
+<html>
+    <head>
+        <title>Quick Prep</title>
+        
+        <link rel="stylesheet" href="CSS/main.css">
+
+        <meta name="viewport" content="width= device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">     <!-- Latest compiled and minified CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+     
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+         
+        <style>
+            body{
+                background-color: #f2f2f2;
+            }
+            #con{
+                margin-left: 390px;
+            }
+            
+            .contact{
+                background-color: white;
+                width:700px;
+                padding: 80px;     
+            }
+            #wat{
+                border: 1px solid #25d366;
+                border-radius: 10px;
+                padding: 10px;
+                background-color: #25d366;
+                color: #f2f2f2;
+                font-family:'Poppins', sans-serif;;
+            }
+.container{
+    position: relative;
+    
+}
+.flex{
+    display:flex;
+}
+.container .card{
+    position:relative;
+    width:320px;
+    height:450px;
+    background:#232323;
+    border-radius: 20px;
+    overflow:hidden;
+}
+.container .card:before{
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:red;
+    clip-path:circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover:before{
+    clip-path:circle(300px at 80% -20%);
+}
+.container .card:after{
+    content:'Prep';
+    position:absolute;
+    top:30%;
+    left:-20%;
+    font-size:12em;
+    font-weight:800;
+    font-style:italic;
+    color:rgba(255,255,255,0.09);
+}
+.container .card .imgBx{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1;
+    width:100%;
+    height: 200px;
+    transition:0.5s;
+}
+.container .card:hover .imgBx{
+    top:0%;
+    transform:translateY(0%)
+}
+.container .card .imgBx img{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%)rotate(-25deg);
+    width:350px;
+}
+.container .card .contentBx{
+    position:absolute;
+    bottom:-380;
+    width:100%;
+    height:100px;
+    text-align:center;
+    transition:1s;
+    z-index:10;
+}
+.container .card .contentBx p{
+    opacity:0;
+}
+.containerr .card:hover .contentBx{
+    height:210px;
+
+}
+
+.container .card:hover p{
+    opacity:1;
+    transition: 0.5s;
+    transform: translateY(-90px);
+}
+.container .card:hover h2{
+    transition: 0.5s;
+    transform: translateY(-100px);
+}
+.container .card .contentBx{
+    position:relative;
+    font-size: 18px;
+    letter-spacing:1px;
+    color:#fff;
+    padding:5px
+}
+span{
+    color:red;
+}
+.head{
+    padding:20px;
+}
+
+
+
+            @media(max-width: 770px){
+                .contact{
+                    width:390px;
+                    padding: 40px;
+                }
+                #con{
+                    margin-left: 35px;
+                }
+                .card{
+                width:18rem;
+                margin-left: 60px;
+                }
+                .flex{
+                    display: block;
+                    
+                }
+                .container .card{
+                position:relative;
+                width:320px;
+                height:450px;
+                background:#232323;
+                border-radius: 20px;
+                overflow:hidden;
+                margin-left: 50px;
+}
+                .head{
+                    padding:10px;
+                    }
+            }
+           
+                        
+                    
+        </style>
+    </head>
+    <body>
+        <header id="h1">
+            <h2 style="text-align:left;padding: 10px;">QuickPrep</h2>
+             <div id="sidenav">
+                 <nav>
+                     
+                     <ul>
+                         <li> <a href="../index.html">HOME</a></li>
+                         <li> <a >C</a></li>
+                         <li><a id="dd" href="main1.html">1. C Snippets</a></li>
+                            <li><a id="dd" href="#">2. C Basics</a></li>
+                         <li> <a href="#">Java</a></li>
+                         <li> <a href="int.html">Interview Prep</a></li>
+                         <li> <a href="tcs.html">TCS Prep</a></li>
+                         <li> <a href="blog1.html">Blogs</a></li>
+                         <li> <a href="contact.html">Contact Us</a></li>
+                         <li> <a href="about.html">About Us</a></li>
+                        
+
+                         
+                     </ul>
+                 </nav>
+             </div>
+             <div id="menuBtn">
+                 <img src="../images/menu.png" id="menu">
+             </div>
+             <script>
+                 var menuBtn = document.getElementById("menuBtn")
+                 var sidenav = document.getElementById("sidenav")
+                 var menu = document.getElementById("menu")
+ 
+                 sidenav.style.right = "-250px";
+ 
+                 menuBtn.onclick =function(){
+                     if(sidenav.style.right == "-250px"){
+                         sidenav.style.right ="0";
+                         menu.src ="../images/close.png";
+                     }
+                     else{
+                         sidenav.style.right="-250px";
+                         menu.src ="../images/menu.png";
+ 
+                     }
+                 }
+             </script>
+        </header>
+        <div class="topnav">
+            <a  href="../index.html">Home</a>
+            <div class="dropdown">
+                <a  href="main1.html" class="dropbtn">C</a>
+                <div class="dropdown-content">
+                    <a href="main1.html">C Snippets</a><br>
+                    <a href="#">C Basics</a>
+                </div>
+            </div>
+            <a href="#">Java</a>
+            <a class="active" href="Int.html">Interview Prep</a>
+            <a href="tcs.html">TCS prep</a>
+            <a href="blog1.html">Blogs</a>
+            <a  href="contact.html">Contact us.</a>
+            <a href="about.html">About Us</a>
+            <!-- <h2 style="color:white;float: right;margin-right:80px;padding:4px">Quick Prep</h2> -->
+            
+
+          </div>
+          <img id="log" src="../images/logo2.png" class="logo">
+
+<!-- Actual Content -->
+
+    <div class="head">
+    <h2>How to Introduce Yourself ? </h2>
+    </div>
+    <div class="head">
+      <p style="font-size: 20px;">How to Introduce yourself is the Million Dollor question where people always tend to 
+        search the solution for.<br>If you are one among them,then you are at the right place.<br>Below are 
+        <a href="#redirect" style="text-decoration:underline;color:red;font-weight: 600;">4 rules</a> to follow to hit this Question.<br><b>All the Best !</b>
+      </p>
+    </div>
+</div>
+
+<div class="flex">
+<div class="container">
+    <div class="card mt-5 mb-5">
+        <div class="imgBx">
+            <img src="../images/r1.png" class="rounded" alt="">
+        </div>
+        <div class="contentBx">
+            <h2 style="font-family: 'EB Garamond', serif;"><li>Good <span>Q</span>uality</li></h2>
+            <p style="font-family: 'poppins',sans-serif;">Start your Introduction saying your good quality and why do u believe that is a good Quality !</p>
+        
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="redirect">
+    <div class="card mt-5 mb-5">
+        <div class="imgBx">
+            <img src="../images/r2.png" class="rounded" alt="">
+        </div>
+        <div class="contentBx">
+            <h2 style="font-family: 'EB Garamond', serif;"><li><span>A</span>spirations</li></h2>
+            <p style="font-family: 'poppins',sans-serif;">Talk About your Aspiration!Where you want to see yourself in next years</p>
+        
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="card mt-5 mb-5">
+        <div class="imgBx">
+            <img src="../images/r4.png" class="rounded" alt="">
+        </div>
+        <div class="contentBx">
+            <h2 style="font-family: 'EB Garamond', serif;"><li><span>I</span>nspirations</li></h2>
+            <p style="font-family: 'poppins',sans-serif;">Take Your Inspirations Out,What made you to get into this particular field of study</p>
+        
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="card mt-5 mb-5">
+        <div class="imgBx">
+            <img src="../images/r3.png" class="rounded" alt="">
+        </div>
+        <div class="contentBx">
+            <h2 style="font-family: 'EB Garamond', serif;"><li>Technical <span>S</span>kills</li></h2>
+            <p style="font-family: 'poppins',sans-serif;">Speak about your skills that matches the Company's Objective or Requirements</p>
+        
+        </div>
+    </div>
+</div>
+</div>
+<!-- Actual Content -->
+
+      
+         
+          
+       <footer class="footer">
+        <div class="container">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>About us</h4>
+                    <ul>
+                        <li><a style="margin-left: 40px;" href="#">This website is created in </a></li>
+                        <li><a style="margin-left: 40px;" href="#">mission to help students</a></li>
+                        <li><a style="margin-left: 40px;" href="#">regarding placements.</a></li>
+                       
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact us</h4>
+                    <div class="intend">                
+                    <a class="link" href="#">nithin.cse.rymec@gmail.com</a><br>
+                    <a class="link" href="#">rahul.cse.rymec@gmail.com</a>
+                    </div>
+                </div>
+                    
+                <div class="footer-col">
+                    <h4>Contributed by</h4>
+                    <ul>
+                        <li><a style="margin-left: 40px;" href="#">Nithin Kalmath</a></li>
+                        <li><a style="margin-left: 40px;" href="#">Rahul Shetty</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+        
+        <a href="https://api.whatsapp.com/send?phone=919008297113&amp;text=Hai%20Team%20QuickPrep!!I%20Found%20your%20Website%20Interesting%20" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+    
+    </body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background:rgba(112,207,166);
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h4{
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #fff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: black;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+
+
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: black;
+  border-bottom: 1px solid #e0e4e8;
+  font-size: 20px;
+  background-color: rgba(139,223,200,.4);
+  
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+.src{
+  margin-left: 5px;
+  margin-top: -20px;
+  margin-bottom: 6px;
+  height:40px;
+
+}
+.card-deck{
+  padding:150px;
+  height:300px;
+}
+
+.wrapper .main_content .head{
+  margin-left: 23px;
+  margin-top: 25px;
+  font-size: 20px;
+
+}
+.wrapper .main_content .card{
+  border: 1px solid black;
+  
+  
+
+  
+}
+.wrapper .sidebar li a {
+  text-decoration: none;
+}
+
+.wrapper .sidebar li.active{
+  background-color: black;
+  
+}
+
+section{
+  height:100vh;
+  width:100%;
+  background-color: white;
+}
+
+table,th,td{
+  border:1px solid black;
+  padding:15px;
+  text-align: left;
+  width:800px;
+}
+table{
+  margin-left: 200px;
+}
+.bubble{
+	position:absolute;
+	z-index:-2;
+	background:black;
+}
