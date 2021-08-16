@@ -24,7 +24,7 @@ ul{
 	list-style: none;
 }
 #ind{
-    margin-top: 350px;
+    margin-top: 28%;
 }
 /*-----------------------------------------------Animation Bubbles------------------------------------------------------------*/
 
@@ -240,12 +240,13 @@ header {
     
 }
 .logo{
-    width:40px;
+    width:50px;
     position: absolute;
     top: 1%;
     left: 95%;
-    border-radius: 50%;
-}
+    /* border-radius: 50%;  */
+
+} 
 .contact{
     text-align: center;
     padding-top: 200px;
@@ -265,6 +266,7 @@ header {
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    
    
     font-size: 17px;
     font-family:'Poppins', sans-serif;
