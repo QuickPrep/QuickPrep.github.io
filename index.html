@@ -141,3 +141,18 @@
        
     </body>
 </html>     
+
+<script>
+    // const countEl = document.getElementById('count');
+    
+    updateVisitCount();
+    
+    function updateVisitCount() {
+fetch('https://api.countapi.xyz/update/quick/prep/?amount=1')
+
+        .then(res => res.json())
+        .then(res => {
+            console.log(res.value);
+        })
+    }
+    </script>
