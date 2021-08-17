@@ -153,6 +153,8 @@ fetch('https://api.countapi.xyz/update/quick/prep/?amount=1')
         .then(res => res.json())
         .then(res => {
             console.log("Number of People visited : " + res.value);
+            const d =new Date();
+            console.log("Time : " + d.getHours()+ ":" + d.getMinutes());
         })
     }
     </script>
