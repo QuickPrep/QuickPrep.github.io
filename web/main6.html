@@ -1,33 +1,164 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text" href="des.css"/>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/main.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" integrity="sha384-tKLJeE1ALTUwtXlaGjJYM3sejfssWdAaWR2s97axw4xkiAdMzQjtOjgcyw0Y50KU" crossorigin="anonymous">
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    
+
+
+</style>
     </head>
     <body style="background-color: white;" >
-        <div style="background-color: forestgreen; text-align: center; margin-left: auto; height: 90px  ; font-size: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
-            -: C Snippets :-
-        </div>
+        <header id="h1">
+            <h2 style="text-align: left;padding: 10px;">QuickPrep</h2>
+             <div id="sidenav">
+                 <nav>
+                     
+                     <ul>
+                         <li> <a href="../index.html">HOME</a></li>
+                         <li> <a href="main1.html">C</a></li>
+                         <li> <div class="dropdown">
+                            <button class="btn text-white dropdown-toggle" type="button" data-toggle="dropdown">C Snippets
+                            </button>
+                            <ul class="dropdown-menu" style="background-color: #31cbbb;">
+                              <li><a href="main1.html">Set-1</a></li>
+                              <li><a href="main2.html">Set-2</a></li>
+                              <li><a href="main3.html">Set-3</a></li>
+                              <li><a href="main4.html">Set-4</a></li>
+                              <li><a href="main5.html">Set-5</a></li>
+                              <li><a href="main6.html">Set-6</a></li>
+
+                            </ul>
+                          </div>
+                        </li>
+
+                            <li><a id="dd" href="#">2. C Basics</a></li>
+                         <li> <a href="#">Java</a></li>
+                         <li> <a href="Int.html">Interview Prep</a></li>
+                         <li> <a href="tcs.html">TCS Prep</a></li>
+                         <li> <a href="blog1.html">Blogs</a></li>
+                         <li> <a href="contact.html">Contact Us</a></li>
+                         
+                     </ul>
+                 </nav>
+             </div>
+             <div id="menuBtn">
+                 <img src="../images/menu.png" id="menu">
+             </div>
+             <script>
+                 var menuBtn = document.getElementById("menuBtn")
+                 var sidenav = document.getElementById("sidenav")
+                 var menu = document.getElementById("menu")
+ 
+                 sidenav.style.right = "-250px";
+ 
+                 menuBtn.onclick =function(){
+                     if(sidenav.style.right == "-250px"){
+                         sidenav.style.right ="0";
+                         menu.src ="../images/close.png";
+                     }
+                     else{
+                         sidenav.style.right="-250px";
+                         menu.src ="../images/menu.png";
+ 
+                     }
+                 }
+             </script>
+        </header>
+        
+            <div class="topnav">
+                <a  href="../index.html">Home</a>
+                <div class="dropdown">
+                    <a  class="active" href="main1.html" class="dropbtn">C</a>
+                    <div class="dropdown-content">
+                        <a href="#">C Snippets</a><br>
+                        <a href="#">C Basics</a>
+                    </div>
+                </div>
+                <a href="#">Java</a>
+                <a href="Int.html">Interview Prep</a>
+                <a href="tcs.html">TCS prep</a>
+                <a href="blog1.html">Blogs</a>
+                <a href="contact.html">Contact us.</a>
+                <a href="about.html">About us.</a>
+
+              </div>
+              <img id="log" src="../images/logo.jpeg" class="logo">
+              <div class="wrapper">
+                <div class="sidebar">
+                    
+                    <ul>
+                        <li><a href="main1.html">Set-1</a></li>
+                        <li><a href="main2.html">Set-2</a></li>
+                        <li><a href="main3.html">Set-3</a></li>
+                        <li><a href="main4.html">Set-4</a></li>
+                        <li><a href="main5.html">Set-5</a></li>
+                        <li><a class="active" href="main6.html">Set-6</a></li>
+                        
+                    </ul> 
+                   
+                </div>
+                </div>
+            
+        <br>
+        <div id="back">
+        <h4 id="nav">C Snippets | Guess the output! | Set 6 </h4>
         <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
-                 </pre>
+
+51.
+
+#include &ltstdio.h&gt
+int main()
+{
+int a;
+int a =25;
+printf("%d", a);
+return 0;
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a.garbage value
+b.25
+c.0
+d.Error
+    </pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample11" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample31" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample11">
+                 <div class="collapse" id="collapseExample31">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Output :Error </b>
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -36,24 +167,41 @@
          <!--Start of 12th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
-                 </pre>
+
+52.
+
+#include&ltstdio.h&gt
+int main()
+{
+{
+int a = 100;
+}
+printf("%d", a);
+return 0;
+}
+    
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a.100
+b.garbage value
+c.0
+d.Error
+</pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample32" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample12">
+                 <div class="collapse" id="collapseExample32">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Output :Error </b>
+ 
+</pre>
                                          </div>
                  </div>
             </div>            
@@ -62,212 +210,387 @@
          <!--Start of 13th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
-                 </pre>
+
+53.
+
+#include&ltstdio.h&gt
+int main()
+{
+int a=5,b=2;
+float r;
+r=a/b;
+printf("%f",r);
+return 0;
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a.2.5
+b.2.500000
+c.2.000000
+d.2
+</pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample13" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample33" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample13">
+                 <div class="collapse" id="collapseExample33">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
+<b>Output: 2.000000 </b>
+ 
+</pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 13th snippet-->
-         <!--Start of 14th snippet-->
+         <!--End of 33th snippet-->
+         <!--Start of 34th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
+
+54.
  
- 
- 
+#include&ltstdio.h&gt
+main()
+{
+int i=-1;
+printf("%d",- -i);
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a.-1
+b.1
+c.0
+d.error
                  </pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample14" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample34" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample14">
+                 <div class="collapse" id="collapseExample34">
                                          <div class="card card-body">
                                                         <pre>
+<b>Output: -1</b>
 
-                                                         </pre>
+</pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 14th snippet-->
-         <!--Start of 15th snippet-->
+         <!--End of 34th snippet-->
+        <!--Start of 35th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
+55.
+
+#include &ltstdio.h&gt
+int main()
+{
+printf("%c",5["ChannelBTech"]);
+return 0;
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a. n
+b. e
+c. l
+d. Error
                  </pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample15" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample35" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample15">
+                 <div class="collapse" id="collapseExample35">
                                          <div class="card card-body">
                                                         <pre>
+<B>Output : e</B>
 
-                                                         </pre>
+
+</pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 15th snippet-->
-         <!--Start of 16th snippet-->
+         <!--End of 35th snippet-->
+         <!--Start of 36th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
-                 </pre>
+
+56.
+
+#include&ltstdio.h&gt
+int main()
+{
+int a=5,b=-1,c=0,d=2,e;
+e=a++&&b++&&c++||d++;
+printf("%d %d %d %d %d",a,b,c,d,e);
+return 0;
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a. 5 0 1 3 1
+b. 1 -1 0 3 1
+c. 6 0 1 3 1
+d. None of these</pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample16" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample36" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample16">
+                 <div class="collapse" id="collapseExample36">
                                          <div class="card card-body">
                                                         <pre>
+<B>Output : 6 0 1 3 1 </B>
 
                                                          </pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 16th snippet-->
-         <!--Start of 17th snippet-->
+         <!--End of 36th snippet-->
+         <!--Start of 37th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
-                 </pre>
+
+57.
+#include &ltstdio.h&gt
+int main()
+{
+int i;
+i=!(0==0)?3:0;
+printf("%d",i);
+return 0;
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a. 0
+b. 1
+c. 3
+d. None of these
+</pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample17" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample37" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample17">
+                 <div class="collapse" id="collapseExample37">
                                          <div class="card card-body">
                                                         <pre>
-
-                                                         </pre>
-                                         </div>
-                 </div>
+<B>Output : 0 </B>
+</pre>
+                </div>
+            </div>
             </div>            
          </div>
-         <!--End of 17th snippet-->
-         <!--Start of 18th snippet-->
+         <!--End of 37th snippet-->
+         <!--Start of 38th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
-                 </pre>
+
+58.
+
+#include&ltstdio.h&gt
+int main()
+{
+int x = -1;
+printf("%d", ++(-x));
+return 0;
+}
+
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a. -1
+b. 0
+c. 1
+d.Error
+</pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample18" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample38" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample18">
+                 <div class="collapse" id="collapseExample38">
                                          <div class="card card-body">
                                                         <pre>
-
+<B>Output : Error </B>
                                                          </pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 18th snippet-->
-         <!--Start of 19th snippet-->
+         <!--End of 38th snippet-->
+         <!--Start of 39th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
- 
- 
- 
+59.
+
+#include&ltstdio.h&gt
+int main()
+{
+int x=3,y=2;
+while(x+y-1)
+{
+printf("%d ",--x+y);
+}
+return 0;
+}
+    
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a. 4 3 2 1
+b. 4 3 2 1 0
+c. 5 4 3 2
+d.5 4 3 2 1
+
                  </pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample19" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample39" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample19">
+                 <div class="collapse" id="collapseExample39">
                                          <div class="card card-body">
                                                         <pre>
+<B>Output : a. 4 3 2 1</B>
 
-                                                         </pre>
+
+</pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 19th snippet-->
-         <!--Start of 20th snippet-->
+         <!--End of 39th snippet-->
+         <!--Start of 40th snippet-->
          <br>
          <div >
-            <div style="border:2px solid black ; width:700px " >
+            <div id="resp" >
                  <div style="padding-left: 10px;"  >
                  <pre >
+60.
+
+#include&ltstdio.h&gt
+int main()
+{
+char *p = "Pointers";
+p="hello";
+printf("%c", *p);
+}
  
- 
- 
+WHAT IS THE OUTPUT OF THE ABOVE SNIPPET?
+
+a. P
+b. h
+c. O
+d. d. error
+
                  </pre>
                  </div >
                  <p>
-                     <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample20" aria-expanded="false" aria-controls="collapseExample">
-                     Explaination
+                     <button id="sol" class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample40" aria-expanded="false" aria-controls="collapseExample">
+                     Solution
                      </button>
                  </p>
-                 <div class="collapse" id="collapseExample20">
+                 <div class="collapse" id="collapseExample40">
                                          <div class="card card-body">
                                                         <pre>
-
+<B>Output : h </B>
+  
                                                          </pre>
                                          </div>
                  </div>
             </div>            
          </div>
-         <!--End of 20th snippet-->
+         <!--End of 40th snippet-->
+         
          <br>
+
+         <a  id="resp1" href="main4.html"> Previous</a> 
+        <!-- <a  id="resp1" href="main4.html">Next ></a>-->
+         
+         <br><br><br>
+         </div>
+         
+
+<!-- --------------------------------Footer-------------------------------------- -->
+
+         <footer class="footer">
+             <div class="container">
+                 <div class="row1">
+                     <div class="footer-col">
+                         <h4>About us</h4>
+                         <ul>
+                             <li><a href="#">This website is created in </a></li>
+                             <li><a href="#">mission to help students</a></li>
+                             <li><a href="#">regarding placements.</a></li>
+                            
+                         </ul>
+                     </div>
+                     
+                     <div class="footer-col">
+                         <h4>Contact us</h4>
+                         <div class="intend">                
+                         <a class="link" href="#">nithin.cse.rymec@gmail.com</a><br>
+                         <a class="link" href="#">rahul.cse.rymec@gmail.com</a>
+                         </div>
+                     </div>
+                         
+                     <div class="footer-col">
+                         <h4>Contributed by</h4>
+                         <ul>
+                             <li><a href="#">Nithin Kalmath</a></li>
+                             <li><a href="#">Rahul Shetty</a></li>
+                         </ul>
+                     </div>
+
+                     <div class="footer-col">
+                        <h4 >Our Social handles</h4>
+                        <ul>
+                            <li><a style="margin-left: 20px;" href="https://instagram.com/quickprep.github.io?utm_medium=copy_link"><i class="bi bi-instagram"></i> /quickprep.github.io</a></li>
+                            <li><a style="margin-left: 20px;" href="https://www.linkedin.com/in/quick-prep-752b71219"><i class="bi bi-linkedin"></i> /quick prep</a></li>
+                        </ul>
+                    </div>
+                     <div>
+                        <a href="https://api.whatsapp.com/send?phone=919008297113&amp;text=Hai%20Team%20QuickPrep!!" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+                    </div>
+                 </div>
+             </div>
+         </footer>
 
     </body>
 </html>
